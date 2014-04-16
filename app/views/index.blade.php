@@ -72,13 +72,7 @@
         <li><a href="#employment"><span class="glyphicons share_alt"><i></i></span>Employment</a></li>
         <li><a href="#services"><span class="glyphicons ok_2"><i></i></span>What I Do</a></li>
         <li><a href="#skills"><span class="glyphicons cogwheels"><i></i></span>Skills</a></li>
-        <li><a href="#bonus"><span class="glyphicons gift"><i></i></span>Bonus</a></li>
-        <li><a href="#portfolio"><span class="glyphicons briefcase"><i></i></span>Portfolio</a></li>
-        <li><a href="#clients"><span class="glyphicons group"><i></i></span>Clients</a></li>
-        <li><a href="#testimonials"><span class="glyphicons comments"><i></i></span>Testimonials</a></li>
-        <li><a href="#services2"><span class="glyphicons dislikes"><i></i></span>Services</a></li>
         <li><a href="#social"><span class="glyphicons heart"><i></i></span>Social Media</a></li>
-        <li><a href="#tweetr"><span class="glyphicons bullhorn"><i></i></span>Last Tweet</a></li>
         <li><a href="#contact"><span class="glyphicons envelope"><i></i></span>Contact me</a></li>
         <li><a href="#download"><span class="glyphicons paperclip"><i></i></span>Download my Resume</a></li>
     </ul>
@@ -121,7 +115,17 @@
 
                 <h2>@lang('index.aboutme-heading')</h2>
 
-                <p class="intro big">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p class="intro big">
+                    @lang('index.aboutme-main-1')
+                    <a href="http://www.cs.tu-dortmund.de/nps/en/Home/index.html">@lang('index.aboutme-main-tud')</a>
+                    @lang('index.aboutme-main-2')
+                    @lang('index.aboutme-main-3')
+                    <a href="http://ls2-www.informatik.uni-dortmund.de/">@lang('index.aboutme-main-ls2')</a>
+                    @lang('index.aboutme-main-4')
+                    @lang('index.aboutme-main-5')
+                    <a href="http://www.adesso.de/en/">@lang('index.aboutme-main-ad')</a>
+                    @lang('index.aboutme-main-6')
+                </p>
 
 
             </div><!-- /.col -->
