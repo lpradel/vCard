@@ -87,10 +87,10 @@
             <div class="col dimfull text-center" id="animation">
 
                 <div id="ccimage" class="img-circle"><img src="./images/me.jpg" alt=""></div>
-                <p id="hello" class=" "><?php echo Lang::get('index.header-hello');?></p>
+                <p id="hello" class=" ">@lang('index.header-hello')</p>
                 <h1 id="ccname" class=" ">Lukas PRADEL</h1>
-                <p id="iam" class=" ">I'm a</p>
-                <h2 id="ccfunction" class=" ">Software Engineer</h2>
+                <p id="iam" class=" ">@lang('index.header-i-am')</p>
+                <h2 id="ccfunction" class=" ">@lang('index.header-job')</h2>
 
             </div><!-- /.col -->
 

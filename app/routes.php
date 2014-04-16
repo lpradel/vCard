@@ -11,12 +11,19 @@
 |
 */
 
+//Route::controller('/', 'IndexController');
+
+Route::get('/', 'IndexController@indexAction');
+
+/*
+Route::any('/', [
+    "as" => "index/index",
+    "uses" => "IndexController@indexAction"
+]);
+
 Route::get('/', function()
 {
+    //echo "test";
 	return View::make('index-DE');
 });
-
-Route::get('users', function()
-{
-    return 'Users!';
-});
+*/
