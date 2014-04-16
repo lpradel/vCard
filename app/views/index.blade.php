@@ -3,7 +3,11 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
+@if (App::getLocale() == "en")
 <html lang="en-US"><!--<![endif]-->
+@else
+<html lang="de-DE"><!--<![endif]-->
+@endif
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -47,7 +51,7 @@
 <div id="top"></div>
 
 
-
+<header>
 <div id="header">
     <div class="container wrap text-center">
         <span class="">Lukas Pradel |</span>
@@ -55,7 +59,9 @@
     </div>
     <a href="#sidr" id="menutrigger" class="pull-right btn icon transparent"><span class="glyphicons justify"><i></i></span></a><span class="clear"></span>
 </div><!-- /#header -->
+</header>
 
+<nav>
 <div id="sidr" class="hidden">
     <h3>Navigation</h3><a href="#" class="navclose"><span class="glyphicons remove_2"><i></i></span></a>
     <ul>
@@ -77,7 +83,9 @@
         <li><a href="#download"><span class="glyphicons paperclip"><i></i></span>Download my Resume</a></li>
     </ul>
 </div>
+</nav>
 
+<main>
 <div id="home" class="sugar-container">
 
     <div class="container wrap">
@@ -111,7 +119,7 @@
 
             <div class="col dimfull text-center">
 
-                <h2>About Me</h2>
+                <h2>@lang('index.aboutme-heading')</h2>
 
                 <p class="intro big">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
@@ -649,12 +657,13 @@
     </div><!-- /.container -->
 
 </div><!-- /#download -->
+</main>
 
 
 
 
 
-
+<footer>
 <div id="copyright">
 
     <div class="container wrap">
@@ -673,6 +682,7 @@
     </div><!-- /.container -->
 
 </div><!-- /#copyright -->
+</footer>
 
 
 

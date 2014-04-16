@@ -1,7 +1,10 @@
 <?php
 
 return array(
-    'header-hello'  => 'Hello, my name is',
-    'header-i-am'   => 'I\'m a',
-    'header-job'    => 'Software Engineer'
+    'header-hello'      => 'Hello, my name is',
+    'header-i-am'       => 'I\'m a',
+    'header-job'        => 'Software Engineer',
+
+    'aboutme-heading'   => 'About me'
+
 );
