@@ -57,6 +57,17 @@
         <span class="">Lukas Pradel |</span>
         <span class="">Software Engineer</span>
     </div>
+    @if (App::getLocale() == "en")
+    <a href="/?lang=de" id="langtrigger">
+        <span class="pull-right icon lang">DE</span>
+    @else
+    <a href="/?lang=en" id="langtrigger">
+        <span class="pull-right icon lang">EN</span>
+    @endif
+        <!--<img src="./images/flag-DE.png" class="pull-right icon" width="23" style="padding-top: 12px; padding-right: 50px;" />-->
+
+    </a>
+
     <a href="#sidr" id="menutrigger" class="pull-right btn icon transparent"><span class="glyphicons justify"><i></i></span></a><span class="clear"></span>
 </div><!-- /#header -->
 </header>
@@ -125,6 +136,10 @@
                     @lang('index.aboutme-main-5')
                     <a href="http://www.adesso.de/en/">@lang('index.aboutme-main-ad')</a>
                     @lang('index.aboutme-main-6')
+                    <br/>
+                    <br/>
+                    @lang('index.aboutme-main-7')
+                    <a href="http://dotabuff.com/players/91417049">Dota 2</a>.
                 </p>
 
 
@@ -148,23 +163,27 @@
 
             <div class="col dimfull text-center">
 
-                <h2>Personal Information</h2>
+                <h2>@lang('index.personal-heading')</h2>
 
                 <dl class="row">
-                    <dt class="col dim1half text-right padright">Date of birth</dt>
-                    <dd class="col dim1half text-left padleft">January 3rd, 1975</dd>
+                    <dt class="col dim1half text-right padright">@lang('index.personal-dob')</dt>
+                    <dd class="col dim1half text-left padleft">@lang('index.personal-dob-val')</dd>
 
-                    <dt class="col dim1half text-right padright">Address</dt>
-                    <dd class="col dim1half text-left padleft">99, Amazing Street<br/>New York<br/>USA</dd>
+                    <dt class="col dim1half text-right padright">@lang('index.personal-adr')</dt>
+                    <dd class="col dim1half text-left padleft">
+                        @lang('index.personal-adr-val-1')<br/>
+                        @lang('index.personal-adr-val-2')<br/>
+                        @lang('index.personal-adr-val-3')
+                    </dd>
 
-                    <dt class="col dim1half text-right padright">Email</dt>
-                    <dd class="col dim1half text-left padleft">john.doe@mymail.com</dd>
+                    <dt class="col dim1half text-right padright">@lang('index.personal-email')</dt>
+                    <dd class="col dim1half text-left padleft">@lang('index.personal-email-val')</dd>
 
-                    <dt class="col dim1half text-right padright">Phone</dt>
-                    <dd class="col dim1half text-left padleft">974 441 568<br/>732 576 274</dd>
+                    <dt class="col dim1half text-right padright">@lang('index.personal-phone')</dt>
+                    <dd class="col dim1half text-left padleft">@lang('index.personal-phone-val')</dd>
 
-                    <dt class="col dim1half text-right padright">Website</dt>
-                    <dd class="col dim1half text-left padleft"><a href="#">myamazingwebsite.com</a></dd>
+                    <dt class="col dim1half text-right padright">@lang('index.personal-web')</dt>
+                    <dd class="col dim1half text-left padleft"><a href="#">@lang('index.personal-web-val')</a></dd>
                 </dl>
 
             </div><!-- /.col -->
@@ -192,82 +211,94 @@
 
             <div class="col dimfull text-center">
 
-                <h2>Education</h2>
+                <h2>@lang('index.edu-heading')</h2>
 
                 <div class="position2 row">
                     <div class="col dim1third text-right padright">
-                        <div class="date-detail">from 2011 to present day</div>
-                        <h3>University of Design</h3>
-                        <p><strong>San Fancisco</strong></p>
+                        <div class="date-detail">from 2012 to present day</div>
+                        <h3>Technische Universit&auml;t Dortmund</h3>
+                        <p><strong>Dortmund, Germany</strong></p>
                     </div>
                     <div class="col dim2thirds text-left padleft post-content">
-                        <h4>Master Degree of Design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt diam ac lectus tristique scelerisque. Quisque vitae libero sit amet turpis faucibus auctor eget vitae tortor. Aenean metus erat, ultricies non mattis quis, molestie ac massa. Sed sollicitudin erat ac dui viverra a posuere eros adipiscing. Phasellus nisi lectus, imperdiet sed hendrerit ac, dictum quis sem. Phasellus vel nisi non massa elementum porta. Aliquam erat volutpat.</p>
+                        <h4>Master of Science</h4>
+                        <p>
+                            I'm currently in my second year of Master's studies. I intend to wrap it up in spring 2015.
+                            My Master's thesis will probably be about efficient algorithms for clustering problems.
+                        </p>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet
+                            <li>Notable courses:
                                 <ul>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Randomized algorithms</li>
+                                    <li>Graph algorithms</li>
+                                    <li>Seminar on algorithm engineering</li>
+                                    <li>Seminar on selected topics of theoretical computer science</li>
                                 </ul>
                             </li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Current average grade: 1.9</li>
                         </ul>
                         <div class="more">
-                            <a class="btn" href="#">See Projects</a> <a class="btn" href="#">Company website</a>
+                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">University website</a>
+                            <a class="btn" href="https://github.com/lpradel/ImplMWM">Project: Implicit maximum weight matchings</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="position2 row">
                     <div class="col dim1third text-right padright">
-                        <div class="date-detail">from 2011 to present day</div>
-                        <h3>University of Design</h3>
-                        <p><strong>San Fancisco</strong></p>
+                        <div class="date-detail">from 2009 to 2012</div>
+                        <h3>Technische Universit&auml;t Dortmund</h3>
+                        <p><strong>Dortmund, Germany</strong></p>
                     </div>
                     <div class="col dim2thirds text-left padleft post-content">
-                        <h4>Master Degree of Design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt diam ac lectus tristique scelerisque. Quisque vitae libero sit amet turpis faucibus auctor eget vitae tortor. Aenean metus erat, ultricies non mattis quis, molestie ac massa. Sed sollicitudin erat ac dui viverra a posuere eros adipiscing. Phasellus nisi lectus, imperdiet sed hendrerit ac, dictum quis sem. Phasellus vel nisi non massa elementum porta. Aliquam erat volutpat.</p>
+                        <h4>Bachelor of Science</h4>
+                        <p>
+                            I finished my Bachelor's degree in computer science in the standard period of study with a minor in economic sciences.
+                            The focus of my studies were theoretical computer science and the design and analysis of efficient algorithms.
+                            In my bachelor thesis I developed &quot;Symbolic Algorithms for weighted matchings&quot;.
+                        </p>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet
+                            <li>Notable courses:
                                 <ul>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Data structures, algorithms and programming I + II</li>
+                                    <li>Calculus, algebra, probability calculus and statistics</li>
+                                    <li>Introduction to theoretical computer science</li>
+                                    <li>Seminar on algorithmic geometry</li>
                                 </ul>
                             </li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Bachelor thesis grade: 1.1</li>
+                            <li>Overall average grade: 2.0</li>
                         </ul>
                         <div class="more">
-                            <a class="btn" href="#">See Projects</a> <a class="btn" href="#">Company website</a>
+                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">University website</a>
+                            <a class="btn" href="https://github.com/lpradel/Go">Project: Go</a>
+                            <a class="btn" href="https://github.com/lpradel/Schatzsuche">Project: Treasure hunt</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="position2 row last">
                     <div class="col dim1third text-right padright">
-                        <div class="date-detail">from 2011 to present day</div>
-                        <h3>University of Design</h3>
-                        <p><strong>San Fancisco</strong></p>
+                        <div class="date-detail">from 2001 to 2009</div>
+                        <h3>Geschwister-Scholl-Gymnasium</h3>
+                        <p><strong>Unna, Germany</strong></p>
                     </div>
                     <div class="col dim2thirds text-left padleft post-content">
-                        <h4>Master Degree of Design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt diam ac lectus tristique scelerisque. Quisque vitae libero sit amet turpis faucibus auctor eget vitae tortor. Aenean metus erat, ultricies non mattis quis, molestie ac massa. Sed sollicitudin erat ac dui viverra a posuere eros adipiscing. Phasellus nisi lectus, imperdiet sed hendrerit ac, dictum quis sem. Phasellus vel nisi non massa elementum porta. Aliquam erat volutpat.</p>
+                        <h4>Abitur</h4>
+                        <p>I went to secondary school in my hometown skipping eight grade.</p>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet
+                            <li>Intensive courses: maths and physics</li>
+                            <li>Numerus clausus: 1.4</li>
+                            <li>Foreign languages:
                                 <ul>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>English</li>
+                                    <li>French</li>
+                                    <li>Latin (Latinum 2011)</li>
+                                    <li>Traditional Greek (Graecum 2013)</li>
                                 </ul>
                             </li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor sit amet</li>
                         </ul>
                         <div class="more">
-                            <a class="btn" href="#">See Projects</a> <a class="btn" href="#">Company website</a>
+                            <a class="btn" href="http://www.gsg-unna.de/">School website</a>
                         </div>
                     </div>
                 </div>

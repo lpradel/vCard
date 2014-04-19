@@ -368,6 +368,8 @@ input.error, textarea.error {margin-bottom: 10px; }
 #header .wrap span {display: none;}
 #header.scrolled {background: #ff6760; }
 #header.scrolled .wrap span {display: inline-block; font-size: 18px; line-height: 35px; margin: 0 2px;}
+#header #langtrigger { position: absolute; top: 0; right: 0; color: #fff !important; line-height: 30px; margin: 0; padding-top: 0; font-size: 20px;}
+#header .lang { font-size: 12px; padding-top: 4px; padding-right: 45px; }
 #header #menutrigger { position: absolute; top: 0; right: 0; color: #fff !important; line-height: 30px; margin: 0; padding-top: 0; font-size: 20px;}
 #header #navhighlight { position: absolute; top: 5px; right: 35px; }
 
