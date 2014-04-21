@@ -1,20 +1,24 @@
+<?php
+if (App::getLocale() == "en") {
+    $lang = "en-US";
+} else {
+    $lang = "de-DE";
+}
+?>
+
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="<?=$lang?>"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="<?=$lang?>"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="<?=$lang?>"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-@if (App::getLocale() == "en")
-<html lang="en-US"><!--<![endif]-->
-@else
-<html lang="de-DE"><!--<![endif]-->
-@endif
+<html lang="<?=$lang?>"><!--<![endif]-->
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="UTF-8">
-    <title>Lukas Pradel | lpradel</title>
+    <title>Lukas Pradel</title>
     <meta name="description" content="Lukas Pradel">
     <meta name="author" content="Lukas Pradel">
 
@@ -64,8 +68,6 @@
     <a href="/?lang=en" id="langtrigger">
         <span class="pull-right icon lang">EN</span>
     @endif
-        <!--<img src="./images/flag-DE.png" class="pull-right icon" width="23" style="padding-top: 12px; padding-right: 50px;" />-->
-
     </a>
 
     <a href="#sidr" id="menutrigger" class="pull-right btn icon transparent"><span class="glyphicons justify"><i></i></span></a><span class="clear"></span>
@@ -215,94 +217,63 @@
 
                 <div class="position2 row">
                     <div class="col dim1third text-right padright">
-                        <div class="date-detail">from 2012 to present day</div>
-                        <h3>Technische Universit&auml;t Dortmund</h3>
-                        <p><strong>Dortmund, Germany</strong></p>
+                        <div class="date-detail">@lang('index.edu-msc-period')</div>
+                        <h3>@lang('index.edu-msc-school')</h3>
+                        <p><strong>@lang('index.edu-msc-city')</strong></p>
                     </div>
                     <div class="col dim2thirds text-left padleft post-content">
-                        <h4>Master of Science</h4>
+                        <h4>@lang('index.edu-msc-title')</h4>
                         <p>
-                            I'm currently in my second year of Master's studies. I intend to wrap it up in spring 2015.
-                            My Master's thesis will probably be about efficient algorithms for clustering problems.
+                            @lang('index.edu-msc-desc')
                         </p>
                         <ul>
-                            <li>Notable courses:
+                            <li>@lang('index.edu-msc-notable')
                                 <ul>
-                                    <li>Randomized algorithms</li>
-                                    <li>Graph algorithms</li>
-                                    <li>Seminar on algorithm engineering</li>
-                                    <li>Seminar on selected topics of theoretical computer science</li>
+                                    <li>@lang('index.edu-msc-notable-1')</li>
+                                    <li>@lang('index.edu-msc-notable-2')</li>
+                                    <li>@lang('index.edu-msc-notable-3')</li>
+                                    <li>@lang('index.edu-msc-notable-4')</li>
                                 </ul>
                             </li>
-                            <li>Current average grade: 1.9</li>
+                            <li>@lang('index.edu-msc-gpa')</li>
                         </ul>
                         <div class="more">
-                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">University website</a>
-                            <a class="btn" href="https://github.com/lpradel/ImplMWM">Project: Implicit maximum weight matchings</a>
+                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">@lang('index.edu-msc-school-web')</a>
+                            <a class="btn" href="https://github.com/lpradel/ImplMWM">@lang('index.edu-msc-project-1')</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="position2 row">
                     <div class="col dim1third text-right padright">
-                        <div class="date-detail">from 2009 to 2012</div>
-                        <h3>Technische Universit&auml;t Dortmund</h3>
-                        <p><strong>Dortmund, Germany</strong></p>
+                        <div class="date-detail">@lang('index.edu-bsc-period')</div>
+                        <h3>@lang('index.edu-bsc-school')</h3>
+                        <p><strong>@lang('index.edu-bsc-city')</strong></p>
                     </div>
                     <div class="col dim2thirds text-left padleft post-content">
-                        <h4>Bachelor of Science</h4>
+                        <h4>@lang('index.edu-bsc-title')</h4>
                         <p>
-                            I finished my Bachelor's degree in computer science in the standard period of study with a minor in economic sciences.
-                            The focus of my studies were theoretical computer science and the design and analysis of efficient algorithms.
-                            In my bachelor thesis I developed &quot;Symbolic Algorithms for weighted matchings&quot;.
+                            @lang('index.edu-bsc-desc')
                         </p>
                         <ul>
-                            <li>Notable courses:
+                            <li>@lang('index.edu-bsc-notable')
                                 <ul>
-                                    <li>Data structures, algorithms and programming I + II</li>
-                                    <li>Calculus, algebra, probability calculus and statistics</li>
-                                    <li>Introduction to theoretical computer science</li>
-                                    <li>Seminar on algorithmic geometry</li>
+                                    <li>@lang('index.edu-bsc-notable-1')</li>
+                                    <li>@lang('index.edu-bsc-notable-2')</li>
+                                    <li>@lang('index.edu-bsc-notable-3')</li>
+                                    <li>@lang('index.edu-bsc-notable-4')</li>
                                 </ul>
                             </li>
-                            <li>Bachelor thesis grade: 1.1</li>
-                            <li>Overall average grade: 2.0</li>
+                            <li>@lang('index.edu-bsc-thesis-grade')</li>
+                            <li>@lang('index.edu-bsc-gpa')</li>
                         </ul>
                         <div class="more">
-                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">University website</a>
-                            <a class="btn" href="https://github.com/lpradel/Go">Project: Go</a>
-                            <a class="btn" href="https://github.com/lpradel/Schatzsuche">Project: Treasure hunt</a>
+                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">@lang('index.edu-bsc-school-web')</a>
+                            <a class="btn" href="https://github.com/lpradel/Go">@lang('index.edu-bsc-project-1')</a>
+                            <a class="btn" href="https://github.com/lpradel/Schatzsuche">@lang('index.edu-bsc-project-2')</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="position2 row last">
-                    <div class="col dim1third text-right padright">
-                        <div class="date-detail">from 2001 to 2009</div>
-                        <h3>Geschwister-Scholl-Gymnasium</h3>
-                        <p><strong>Unna, Germany</strong></p>
-                    </div>
-                    <div class="col dim2thirds text-left padleft post-content">
-                        <h4>Abitur</h4>
-                        <p>I went to secondary school in my hometown skipping eight grade.</p>
-                        <ul>
-                            <li>Intensive courses: maths and physics</li>
-                            <li>Numerus clausus: 1.4</li>
-                            <li>Foreign languages:
-                                <ul>
-                                    <li>English</li>
-                                    <li>French</li>
-                                    <li>Latin (Latinum 2011)</li>
-                                    <li>Traditional Greek (Graecum 2013)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="btn" href="http://www.gsg-unna.de/">School website</a>
-                        </div>
-                    </div>
-                </div>
-
 
             </div><!-- /.col -->
 
@@ -329,37 +300,52 @@
 
                 <h2>Employment</h2>
 
-                <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p class="intro">
+                    I've been employed for almost the entire duration of my studies to cover the costs and to gather valuable experience.
+                    I will keep on working until I finish my studies and am always interested in new employment options for the time afterwards.
+                </p>
 
 
-                <div class="date-detail">from 2011 to present day</div>
+                <div class="date-detail">from 2012 to present day</div>
                 <div class="position">
-                    <h3>Company</h3>
-                    <h4>Senior UX Designer </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt diam ac lectus tristique scelerisque. Quisque vitae libero sit amet turpis faucibus auctor eget vitae tortor. Aenean metus erat, ultricies non mattis quis, molestie ac massa. Sed sollicitudin erat ac dui viverra a posuere eros adipiscing. Phasellus nisi lectus, imperdiet sed hendrerit ac, dictum quis sem. Phasellus vel nisi non massa elementum porta. Aliquam erat volutpat.</p>
+                    <h3>adesso AG</h3>
+                    <h4>Junior software engineer</h4>
+                    <p>
+                        Our team develops and maintains an online lottery platform. The software involved has become very complex
+                        over the span of more than a decade. Typical problems we face are mass data processing, integration of various contractors and third party
+                        services and implementing complex subject-specific requirements. I have among others been involved in the design and implementation of a web service
+                        providing result data, the SEPA-migration and the implementation of new registration and identification methods.
+                    </p>
                     <div class="more">
-                        <a class="btn" href="#">See Projects</a> <a class="btn" href="#">Company website</a>
+                        <a class="btn" href="https://adesso.de/en/index.jsp">Company website</a>
                     </div>
                 </div>
 
-                <div class="date-detail">from 2011 to present day</div>
+                <div class="date-detail">from 2010 to present day</div>
                 <div class="position">
-                    <h3>Company</h3>
-                    <h4>Senior UX Designer </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt diam ac lectus tristique scelerisque. Quisque vitae libero sit amet turpis faucibus auctor eget vitae tortor. Aenean metus erat, ultricies non mattis quis, molestie ac massa. Sed sollicitudin erat ac dui viverra a posuere eros adipiscing. Phasellus nisi lectus, imperdiet sed hendrerit ac, dictum quis sem. Phasellus vel nisi non massa elementum porta. Aliquam erat volutpat.</p>
+                    <h3>Technische Universit&auml;t Dortmund</h3>
+                    <h4>Student assistant</h4>
+                    <p>
+                        At the Efficient Algorithms and Complexity Theory chair I help with preparing lecture slides, writing research papers and often literature search.
+                        More often than not I implement algorithms and compare them to previous work. I also code tools when needed and maintain the website.
+                        My work often involves LaTeX.
+                    </p>
                     <div class="more">
-                        <a class="btn" href="#">See Projects</a> <a class="btn" href="#">Company website</a>
+                        <a class="btn" href="http://ls2-www.cs.uni-dortmund.de/">Chair website</a>
                     </div>
                 </div>
 
 
-                <div class="date-detail">from 2011 to present day</div>
+                <div class="date-detail">March 2007</div>
                 <div class="position last">
-                    <h3>Company</h3>
-                    <h4>Senior UX Designer </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt diam ac lectus tristique scelerisque. Quisque vitae libero sit amet turpis faucibus auctor eget vitae tortor. Aenean metus erat, ultricies non mattis quis, molestie ac massa. Sed sollicitudin erat ac dui viverra a posuere eros adipiscing. Phasellus nisi lectus, imperdiet sed hendrerit ac, dictum quis sem. Phasellus vel nisi non massa elementum porta. Aliquam erat volutpat.</p>
+                    <h3>University of Duisburg-Essen</h3>
+                    <h4>Intern</h4>
+                    <p>
+                        I interned at Professor Echtle's Dependability of Computing Systems chair. Based on the work by previous research assistants I developed methods
+                        for fault tolerance and message exchange on an experimental automation system. I also did some optimization work on sensors and actuators.
+                    </p>
                     <div class="more">
-                        <a class="btn" href="#">See Projects</a> <a class="btn" href="#">Company website</a>
+                        <a class="btn" href="https://www.uni-due.de/en/">University website</a>
                     </div>
                 </div>
 
