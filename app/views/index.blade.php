@@ -83,7 +83,7 @@ if (App::getLocale() == "en") {
         <li><a href="#personalinfo"><span class="glyphicons nameplate"><i></i></span>Personal Information</a></li>
         <li><a href="#education"><span class="glyphicons certificate"><i></i></span>Education</a></li>
         <li><a href="#employment"><span class="glyphicons share_alt"><i></i></span>Employment</a></li>
-        <li><a href="#services"><span class="glyphicons ok_2"><i></i></span>What I Do</a></li>
+        <li><a href="#code"><span class="glyphicons briefcase"><i></i></span>Code</a></li>
         <li><a href="#skills"><span class="glyphicons cogwheels"><i></i></span>Skills</a></li>
         <li><a href="#social"><span class="glyphicons heart"><i></i></span>Social Media</a></li>
         <li><a href="#contact"><span class="glyphicons envelope"><i></i></span>Contact me</a></li>
@@ -360,14 +360,9 @@ if (App::getLocale() == "en") {
 </div><!-- /#employment -->
 
 
+<div id="code" class="cream-container parallax" data-speed="22" data-offsetY="-150">
 
-
-
-
-
-<div id="services" class="cream-container parallax" data-speed="12" data-offsetY="-150" >
-
-    <div class="icon-container"><div><span class="glyphicons ok_2"><i></i></span></div></div>
+    <div class="icon-container"><div><span class="glyphicons briefcase"><i></i></span></div></div>
 
     <div class="container wrap">
 
@@ -375,66 +370,99 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center">
 
-                <h2>What I Do</h2>
+                <h2>Code</h2>
 
                 <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
+                <ul data-target="o-container" class="btn-nav o-filters centered">
+                    <li class="active"><a data-filter="*" href="#">All</a></li>
+                    <li><a data-filter=".o-filterable-cat1" href="#">Category 1</a></li>
+                    <li><a data-filter=".o-filterable-cat2" href="#">Category 2</a></li>
+                </ul>
 
-                <div class="row services">
+                <div class="row o-items-container format-mosaic o-index" data-cols="4" id="o-container">
 
-                    <div class="col dim1third">
+                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-1">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio1.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio1.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                        <img src="./images/iconserv1.png" alt="" >
-                        <h3>Service 1</h3>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-2">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio4.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio4.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                    </div>
+                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-3">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio2.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio2.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                    <div class="col dim1third">
+                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-4">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio5.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio5.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                        <img src="./images/iconserv2.png" alt="" >
-                        <h3>Service 2</h3>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-5">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio3.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio3.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                    </div>
+                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-6">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio6.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio6.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                    <div class="col dim1third">
+                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-7">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio7.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio7.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                        <img src="./images/iconserv3.png" alt="" >
-                        <h3>Service 3</h3>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
+                        <div class="inner-hentry">
+                            <div class="posthead">
+                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio8.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
+                                    <img src="./images/portfolio8.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div><!-- /.inner-hentry -->
+                    </div><!-- /.col .o-item -->
 
-                    </div>
-
-                    <span class="clear"></span><span class="spacer"></span>
-
-                    <div class="col dim1third">
-
-                        <img src="./images/iconserv4.png" alt="" >
-                        <h3>Service 4</h3>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
-
-                    </div>
-
-                    <div class="col dim1third">
-
-                        <img src="./images/iconserv5.png" alt="" >
-                        <h3>Service 5</h3>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
-
-                    </div>
-
-                    <div class="col dim1third">
-
-                        <img src="./images/iconserv6.png" alt="" >
-                        <h3>Service 6</h3>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
-
-                    </div>
-
-
-                </div><!-- /.row  -->
-
+                </div><!-- /.o-items-container -->
 
             </div><!-- /.col -->
 
@@ -442,9 +470,7 @@ if (App::getLocale() == "en") {
 
     </div><!-- /.container -->
 
-</div><!-- /#services -->
-
-
+</div><!-- /#portfolio -->
 
 
 
