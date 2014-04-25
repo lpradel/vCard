@@ -70,4 +70,11 @@ return array(
     'edu-bsc-project-1'     => 'Project: Go',
     'edu-bsc-project-2'     => 'Project: Treasure hunt',
 
+    // Employment - Intern DuE
+    'emp-due-period'        => 'March 2007',
+    'emp-due-company'       => 'University of Duisburg-Essen',
+    'emp-due-position'      => 'Intern',
+    'emp-due-desc'          => 'I interned at Professor Echtle\'s Dependability of Computing Systems chair. Based on the work by previous research assistants I developed methods
+                                for fault tolerance and message exchange on an experimental automation system. I also did some optimization work on sensors and actuators.',
+    'emp-due-web'           => 'University website'
 );

@@ -336,16 +336,15 @@ if (App::getLocale() == "en") {
                 </div>
 
 
-                <div class="date-detail">March 2007</div>
+                <div class="date-detail">@lang('index.emp-due-period')</div>
                 <div class="position last">
-                    <h3>University of Duisburg-Essen</h3>
+                    <h3>@lang('index.emp-due-company')</h3>
                     <h4>Intern</h4>
                     <p>
-                        I interned at Professor Echtle's Dependability of Computing Systems chair. Based on the work by previous research assistants I developed methods
-                        for fault tolerance and message exchange on an experimental automation system. I also did some optimization work on sensors and actuators.
+                        @lang('index.emp-due-desc')
                     </p>
                     <div class="more">
-                        <a class="btn" href="https://www.uni-due.de/en/">University website</a>
+                        <a class="btn" href="https://www.uni-due.de/en/">@lang('index.emp-due-web')</a>
                     </div>
                 </div>
 
