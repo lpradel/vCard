@@ -298,40 +298,34 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center">
 
-                <h2>Employment</h2>
+                <h2>@lang('index.emp-heading')</h2>
 
                 <p class="intro">
-                    I've been employed for almost the entire duration of my studies to cover the costs and to gather valuable experience.
-                    I will keep on working until I finish my studies and am always interested in new employment options for the time afterwards.
+                    @lang('index.emp-desc')
                 </p>
 
 
-                <div class="date-detail">from 2012 to present day</div>
+                <div class="date-detail">@lang('index.emp-ad-period')</div>
                 <div class="position">
-                    <h3>adesso AG</h3>
-                    <h4>Junior software engineer</h4>
+                    <h3>@lang('index.emp-ad-company')</h3>
+                    <h4>@lang('index.emp-ad-position')</h4>
                     <p>
-                        Our team develops and maintains an online lottery platform. The software involved has become very complex
-                        over the span of more than a decade. Typical problems we face are mass data processing, integration of various contractors and third party
-                        services and implementing complex subject-specific requirements. I have among others been involved in the design and implementation of a web service
-                        providing result data, the SEPA-migration and the implementation of new registration and identification methods.
+                        @lang('index.emp-ad-desc')
                     </p>
                     <div class="more">
-                        <a class="btn" href="https://adesso.de/en/index.jsp">Company website</a>
+                        <a class="btn" href="https://adesso.de/en/index.jsp">@lang('index.emp-ad-web')</a>
                     </div>
                 </div>
 
-                <div class="date-detail">from 2010 to present day</div>
+                <div class="date-detail">@lang('index.emp-tud-stud-period')</div>
                 <div class="position">
-                    <h3>Technische Universit&auml;t Dortmund</h3>
-                    <h4>Student assistant</h4>
+                    <h3>@lang('index.emp-tud-stud-company')</h3>
+                    <h4>@lang('index.emp-tud-stud-position')</h4>
                     <p>
-                        At the Efficient Algorithms and Complexity Theory chair I help with preparing lecture slides, writing research papers and often literature search.
-                        More often than not I implement algorithms and compare them to previous work. I also code tools when needed and maintain the website.
-                        My work often involves LaTeX.
+                        @lang('index.emp-tud-stud-desc')
                     </p>
                     <div class="more">
-                        <a class="btn" href="http://ls2-www.cs.uni-dortmund.de/">Chair website</a>
+                        <a class="btn" href="http://ls2-www.cs.uni-dortmund.de/">@lang('index.emp-tud-stud-web')</a>
                     </div>
                 </div>
 
@@ -339,7 +333,7 @@ if (App::getLocale() == "en") {
                 <div class="date-detail">@lang('index.emp-due-period')</div>
                 <div class="position last">
                     <h3>@lang('index.emp-due-company')</h3>
-                    <h4>Intern</h4>
+                    <h4>@lang('index.emp-due-position')</h4>
                     <p>
                         @lang('index.emp-due-desc')
                     </p>
@@ -369,99 +363,15 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center">
 
-                <h2>Code</h2>
+                <h2>@lang('index.code-heading')</h2>
 
-                <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p class="intro">
+                    @lang('index.code-desc-1')
+                    <a href="https://github.com/lpradel/"><span class="icomoon icomoon-github3"></span><span> github</span></a>
+                    @lang('index.code-desc-2')
+                    <a href="http://osrc.dfm.io/lpradel">Open Source Report Card</a>.
+                </p>
 
-                <ul data-target="o-container" class="btn-nav o-filters centered">
-                    <li class="active"><a data-filter="*" href="#">All</a></li>
-                    <li><a data-filter=".o-filterable-cat1" href="#">Category 1</a></li>
-                    <li><a data-filter=".o-filterable-cat2" href="#">Category 2</a></li>
-                </ul>
-
-                <div class="row o-items-container format-mosaic o-index" data-cols="4" id="o-container">
-
-                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-1">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio1.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio1.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-2">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio4.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio4.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-3">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio2.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio2.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-4">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio5.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio5.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-5">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio3.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio3.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-6">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio6.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio6.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                    <div class="post hentry col o-item o-filterable-cat1" data-cols="1" id="item-7">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio7.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio7.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                    <div class="post hentry col o-item o-filterable-cat2" data-cols="1" id="item-8">
-                        <div class="inner-hentry">
-                            <div class="posthead">
-                                <div class="hovereffect hoveractions" data-group="portfolio" data-zoomimg="./images/portfolio8.jpg" data-zoomtitle="" data-zoomi18n="Zoom" >
-                                    <img src="./images/portfolio8.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div><!-- /.inner-hentry -->
-                    </div><!-- /.col .o-item -->
-
-                </div><!-- /.o-items-container -->
 
             </div><!-- /.col -->
 

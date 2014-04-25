@@ -70,11 +70,41 @@ return array(
     'edu-bsc-project-1'     => 'Project: Go',
     'edu-bsc-project-2'     => 'Project: Treasure hunt',
 
+    // Employment
+    'emp-heading'           => 'Employment',
+    'emp-desc'              => 'I\'ve been employed for almost the entire duration of my studies to cover the costs and to gather valuable experience.
+                                I will keep on working until I finish my studies and am always interested in new employment options for the time afterwards.',
+
     // Employment - Intern DuE
     'emp-due-period'        => 'March 2007',
     'emp-due-company'       => 'University of Duisburg-Essen',
     'emp-due-position'      => 'Intern',
     'emp-due-desc'          => 'I interned at Professor Echtle\'s Dependability of Computing Systems chair. Based on the work by previous research assistants I developed methods
                                 for fault tolerance and message exchange on an experimental automation system. I also did some optimization work on sensors and actuators.',
-    'emp-due-web'           => 'University website'
+    'emp-due-web'           => 'University website',
+
+    // Employment - Student assistant TUD
+    'emp-tud-stud-period'   => 'from 2010 to present day',
+    'emp-tud-stud-company'  => 'Technische Universit&auml;t Dortmund',
+    'emp-tud-stud-position' => 'Student assistant',
+    'emp-tud-stud-desc'     => 'At the Efficient Algorithms and Complexity Theory chair I help with preparing lecture slides, writing research papers and often literature search.
+                                More often than not I implement algorithms and compare them to previous work. I also code tools when needed and maintain the website.
+                                My work often involves LaTeX.',
+    'emp-tud-stud-web'      => 'Chair website',
+
+    // Employment - Student employee adesso AG
+    'emp-ad-period'         => 'from 2012 to present day',
+    'emp-ad-company'        => 'adesso AG',
+    'emp-ad-position'       => 'Student employee',
+    'emp-ad-desc'           => 'Our team develops and maintains an online lottery platform. The software involved has become very complex
+                                over the span of more than a decade. Typical problems we face are mass data processing, integration of various contractors and third party
+                                services and implementing complex subject-specific requirements. I have among others been involved in the design and implementation of a web service
+                                providing result data, the SEPA-migration and the implementation of new registration and identification methods.',
+    'emp-ad-web'            => 'Company website',
+
+    // Code
+    'code-heading'          => 'Code',
+    'code-desc-1'           => 'I do not maintain a dedicated project portfolio. If you want to take
+                                a look at the code I produce, check out my',
+    'code-desc-2'           => 'profile or my'
 );
