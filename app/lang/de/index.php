@@ -17,6 +17,7 @@ return array(
     'menu-social'           => 'Social Media',
     'menu-contact'          => 'Kontakt',
     'menu-cv'               => 'Lebenslauf',
+    'menu-legal'            => 'Impressum',
 
     // Über mich
     'aboutme-heading'       => '&Uuml;ber mich',

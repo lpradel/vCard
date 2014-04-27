@@ -28,7 +28,7 @@ if (App::getLocale() == "en") {
 
     <!-- Favicons
     ================================================== -->
-    <link rel='shortcut icon' href='./images/favicon.ico?v=5'>
+    <link rel='shortcut icon' href='./images/favicon.ico'>
     <!--
     <link rel='apple-touch-icon' href='./images/apple-touch-icon.png'>
     <link rel='apple-touch-icon' sizes='72x72' href='./images/apple-touch-icon-72x72.png'>
@@ -37,10 +37,9 @@ if (App::getLocale() == "en") {
 
     <!-- CSS
     ================================================== -->
+
     <link rel="stylesheet" id="o-responsive-css" href="./css/o-responsive.css" type="text/css" media="all">
     <link rel="stylesheet" id="themestyle-css" href="./css/style.css" type="text/css" media="all">
-    <link rel="stylesheet"  id="prettyPhoto-css" href="./css/prettyPhoto.css" media="screen">
-    <link rel="stylesheet" id="photoswipe-css" href="./css/photoswipe.css" type="text/css" media="all">
     <link rel="stylesheet" id="glyphicons-css" href="./css/glyphicons.css" type="text/css" media="all">
     <link rel="stylesheet" id="icomoon-css" href="./css/icomoon.css" type="text/css" media="all">
 
@@ -741,7 +740,15 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center">
 
-                <p>&copy; 2014 <em>Lukas Pradel</em> | Built with <a href="http://laravel.com/">Laravel/4.1.25</a> | Hosted at <a href="http://digitalocean.com/">DigitalOcean</a> | Powered by <a href="http://nginx.org/">nginx/1.5.13</a></p>
+                <p>
+                    &copy; 2014 <em>Lukas Pradel</em> |
+                    <a href="@lang('routes.legal')">
+                        @lang('index.menu-legal')
+                    </a> |
+                    Built with <a href="http://laravel.com/">Laravel/4.1.25</a> |
+                    Hosted at <a href="http://digitalocean.com/">DigitalOcean</a> |
+                    Powered by <a href="http://nginx.org/">nginx/1.5.13</a>
+                </p>
 
 
             </div><!-- /.col -->
@@ -763,16 +770,9 @@ if (App::getLocale() == "en") {
 ================================================== -->
 
 <script type="text/javascript" src="./js/jquery.min.js"></script>
-<script type='text/javascript' src='./js/jquery.easing.1.3.js'></script>
-<script type='text/javascript' src='./js/jquery.isotope.min.js'></script>
-<script type='text/javascript' src='./js/jquery.elastislide.js'></script>
-<script type='text/javascript' src="./js/jquery.prettyPhoto.js"></script>
 <script type='text/javascript' src='./js/klass.min.js'></script>
-<script type='text/javascript' src='./js/code.photoswipe.jquery-3.0.4.min.js'></script>
-<script type='text/javascript' src='./js/jquery.jtwt.min.js'></script>
+<script type='text/javascript' src='./js/jquery.easing.1.3.js'></script>
 <script type='text/javascript' src='./js/jquery.sidr.min.js'></script>
-<script type='text/javascript' src='./js/responsiveslides.min.js'></script>
-
 <script type='text/javascript' src='./js/scripts.js'></script>
 
 
