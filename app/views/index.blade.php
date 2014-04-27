@@ -78,16 +78,16 @@ if (App::getLocale() == "en") {
 <div id="sidr" class="hidden">
     <h3>Navigation</h3><a href="#" class="navclose"><span class="glyphicons remove_2"><i></i></span></a>
     <ul>
-        <li><a href="#home" ><span class="glyphicons home"><i></i></span>Home</a></li>
-        <li><a href="#about" ><span class="glyphicons user"><i></i></span>About Me</a></li>
-        <li><a href="#personalinfo"><span class="glyphicons nameplate"><i></i></span>Personal Information</a></li>
-        <li><a href="#education"><span class="glyphicons certificate"><i></i></span>Education</a></li>
-        <li><a href="#employment"><span class="glyphicons share_alt"><i></i></span>Employment</a></li>
-        <li><a href="#code"><span class="glyphicons briefcase"><i></i></span>Code</a></li>
-        <li><a href="#skills"><span class="glyphicons cogwheels"><i></i></span>Skills</a></li>
-        <li><a href="#social"><span class="glyphicons heart"><i></i></span>Social Media</a></li>
-        <li><a href="#contact"><span class="glyphicons envelope"><i></i></span>Contact me</a></li>
-        <li><a href="#download"><span class="glyphicons paperclip"><i></i></span>Download my Resume</a></li>
+        <li><a href="#home" ><span class="glyphicons home"><i></i></span>@lang('index.menu-home')</a></li>
+        <li><a href="#about" ><span class="glyphicons user"><i></i></span>@lang('index.menu-aboutme')</a></li>
+        <li><a href="#personalinfo"><span class="glyphicons nameplate"><i></i></span>@lang('index.menu-personal')</a></li>
+        <li><a href="#education"><span class="glyphicons certificate"><i></i></span>@lang('index.menu-edu')</a></li>
+        <li><a href="#employment"><span class="glyphicons share_alt"><i></i></span>@lang('index.menu-emp')</a></li>
+        <li><a href="#code"><span class="glyphicons briefcase"><i></i></span>@lang('index.menu-code')</a></li>
+        <li><a href="#skills"><span class="glyphicons cogwheels"><i></i></span>@lang('index.menu-skills')</a></li>
+        <li><a href="#social"><span class="glyphicons heart"><i></i></span>@lang('index.menu-social')</a></li>
+        <li><a href="#contact"><span class="glyphicons envelope"><i></i></span>@lang('index.menu-contact')</a></li>
+        <li><a href="#download"><span class="glyphicons paperclip"><i></i></span>@lang('index.menu-cv')</a></li>
     </ul>
 </div>
 </nav>
@@ -656,8 +656,8 @@ if (App::getLocale() == "en") {
 
                 <form id="contact-form" method="post" action="#contact-form" class="text-left" data-form-action="./email.php">
 
-                    <div class="email-confirmation hidden"><span class="glyphicons ok_2"><i></i></span> Email Success</div>
-                    <div class="email-error hidden"><span class="glyphicons remove_2"><i></i></span> Email Error</div>
+                    <div class="email-confirmation hidden"><span class="glyphicons ok_2"><i></i></span> @lang('index.contact-success')</div>
+                    <div class="email-error hidden"><span class="glyphicons remove_2"><i></i></span> @lang('index.contact-error')</div>
 
                     <input type="hidden" name="emailto" value="lukas.pradel@gmx.net">
                     <input type="hidden" name="websitename" value="localhost">
@@ -710,9 +710,11 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center">
 
-                <h2>Download my Resume</h2>
+                <h2>@lang('index.cv-heading')</h2>
 
-                <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+                <p class="intro">
+                    @lang('index.cv-desc')
+                </p>
 
                 <a href="#" class="btn">Download</a>
 

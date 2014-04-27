@@ -6,6 +6,18 @@ return array(
     'header-i-am'           => 'I\'m a',
     'header-job'            => 'Software Engineer',
 
+    // Menu
+    'menu-home'             => 'Home',
+    'menu-aboutme'          => 'About me',
+    'menu-personal'         => 'Personal Information',
+    'menu-edu'              => 'Education',
+    'menu-emp'              => 'Employment',
+    'menu-code'             => 'Code',
+    'menu-skills'           => 'Skills',
+    'menu-social'           => 'Social Media',
+    'menu-contact'          => 'Contact me',
+    'menu-cv'               => 'Resume',
+
     // About me
     'aboutme-heading'       => 'About me',
     'aboutme-main-1'        => 'I\'m currently pursuing a master\'s degree in computer science at',
@@ -65,7 +77,7 @@ return array(
     'edu-bsc-notable-3'     => 'Introduction to theoretical computer science',
     'edu-bsc-notable-4'     => 'Seminar on algorithmic geometry',
     'edu-bsc-thesis-grade'  => 'Bachelor thesis grade: 1.1',
-    'edu-bsc-gpa'           => 'Current average grade: 1.9',
+    'edu-bsc-gpa'           => 'Average grade: 2.0',
     'edu-bsc-school-web'    => 'University website',
     'edu-bsc-project-1'     => 'Project: Go',
     'edu-bsc-project-2'     => 'Project: Treasure hunt',
@@ -147,5 +159,10 @@ return array(
     'contact-msg-ph'        => 'Your message',
     'contact-msg-error'     => 'Please enter your message.',
     'contact-submit'        => 'Submit',
+    'contact-success'       => 'Your message was sent.',
+    'contact-error'         => 'There was an error submitting your message. Try sending me an email instead!',
 
+    // Download my resume
+    'cv-heading'            => 'Download my Resume',
+    'cv-desc'               => 'If you prefer to read my resume offline you can download the PDF below.'
 );

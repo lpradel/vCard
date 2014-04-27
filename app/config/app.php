@@ -41,8 +41,6 @@ return array(
 
 	'timezone' => 'UTC',
 
-    'fallback_locale' => 'en',
-
 	/*
 	|--------------------------------------------------------------------------
 	| Application Locale Configuration
@@ -55,6 +53,13 @@ return array(
 	*/
 
 	'locale' => 'en',
+
+    'fallback_locale' => 'en',
+
+    'locales' => array(
+        'en',
+        'de'
+    ),
 
 	/*
 	|--------------------------------------------------------------------------

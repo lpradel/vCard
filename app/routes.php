@@ -11,19 +11,17 @@
 |
 */
 
-//Route::controller('/', 'IndexController');
+$locales = Config::get('app.locales');
+
+foreach ($locales as $locale) {
+
+    App::setLocale($locale);
+
+    $home = trans('routes.home');
+    $legal = trans('routes.legal');
+
+    Route::get($home, 'IndexController@indexAction');
+    Route::get($legal, 'LegalController@indexAction');
+}
 
 Route::get('/', 'IndexController@indexAction');
-
-/*
-Route::any('/', [
-    "as" => "index/index",
-    "uses" => "IndexController@indexAction"
-]);
-
-Route::get('/', function()
-{
-    //echo "test";
-	return View::make('index-DE');
-});
-*/
