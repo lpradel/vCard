@@ -393,13 +393,33 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center skills">
 
-                <h2>Skills</h2>
+                <h2>@lang('index.skills-heading')</h2>
 
-                <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p class="intro">
+                    @lang('index.skills-desc')
+                </p>
 
-                <h3>Stars Rating</h3>
+                <h3>@lang('index.skills-prog')</h3>
                 <dl class="row skills">
-                    <dt class="col dim1half text-right padright">Print</dt>
+                    <dt class="col dim1half text-right padright">Java (SE)</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">Java (EE)</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">C++</dt>
                     <dd class="col dim1half text-left padleft">
                         <span class="glyphicons star"><i></i></span>
                         <span class="glyphicons star"><i></i></span>
@@ -408,75 +428,162 @@ if (App::getLocale() == "en") {
                         <span class="glyphicons dislikes"><i></i></span>
                     </dd>
 
-                    <dt class="col dim1half text-right padright">Web</dt>
+                    <dt class="col dim1half text-right padright">PHP</dt>
                     <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
                         <span class="glyphicons star"><i></i></span>
                         <span class="glyphicons star"><i></i></span>
                         <span class="glyphicons star"><i></i></span>
                         <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
                     </dd>
 
-                    <dt class="col dim1half text-right padright">User Interface</dt>
+                    <dt class="col dim1half text-right padright">C</dt>
                     <dd class="col dim1half text-left padleft">
                         <span class="glyphicons star"><i></i></span>
                         <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">C#</dt>
+                    <dd class="col dim1half text-left padleft">
                         <span class="glyphicons star"><i></i></span>
                         <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
                     </dd>
 
                 </dl><br/>
 
-                <h3>Heart Rating</h3>
-                <dl class="row">
-                    <dt class="col dim1half text-right padright">php</dt>
+                <h3>@lang('index.skills-frameworks')</h3>
+                <dl class="row skills">
+                    <dt class="col dim1half text-right padright">Struts</dt>
                     <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart_empty"><i></i></span>
-                        <span class="glyphicons heart_empty"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
                     </dd>
 
-                    <dt class="col dim1half text-right padright">javaScript</dt>
+                    <dt class="col dim1half text-right padright">Spring MVC</dt>
                     <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart_empty"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
                     </dd>
 
-                    <dt class="col dim1half text-right padright">HTML</dt>
+                    <dt class="col dim1half text-right padright">JSF</dt>
                     <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
-                        <span class="glyphicons heart"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
                     </dd>
 
+                    <dt class="col dim1half text-right padright">Wicket</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">Laravel</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">CodeIgniter</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">ASP.NET MVC</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons star"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                        <span class="glyphicons dislikes"><i></i></span>
+                    </dd>
                 </dl><br/>
 
-                <h3>List of Skills</h3>
+                <h3>@lang('index.skills-other')</h3>
                 <dl class="row">
-                    <dt class="col dim1half text-right padright">Programming Languages</dt>
+                    <dt class="col dim1half text-right padright">@lang('index.skills-build-dev')</dt>
                     <dd class="col dim1half text-left padleft">
-                        <span class="btn">HTML5</span>
-                        <span class="btn">CSS3</span>
+                        <span class="btn">Eclipse</span>
+                        <span class="btn">Gradle</span>
+                        <span class="btn">Maven</span>
+                        <span class="btn">Ant</span>
+                        <span class="btn">DBVisualizer</span>
+                        <span class="btn">Visual Studio</span>
+                        <span class="btn">CMake</span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">@lang('index.skills-servers')</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="btn">JBoss</span>
+                        <span class="btn">Jakarta Tomcat</span>
+                        <span class="btn">Apache</span>
+                        <span class="btn">Nginx</span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">@lang('index.skills-testing')</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="btn">JUnit</span>
+                        <span class="btn">TestNG</span>
+                        <span class="btn">Mockito</span>
+                        <span class="btn">PowerMock</span>
+                        <span class="btn">Selenium</span>
+                        <span class="btn">GoogleTest</span>
+                        <span class="btn">CUTE</span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">@lang('index.skills-ci')</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="btn">Jenkins</span>
+                        <span class="btn">Hudson</span>
+                        <span class="btn">Travis CI</span>
+                        <span class="btn">Vagrant</span>
+                        <span class="btn">Puppet</span>
+                    </dd>
+
+                    <dt class="col dim1half text-right padright">@lang('index.skills-web-front')</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="btn">HTML</span>
+                        <span class="btn">CSS</span>
                         <span class="btn">javaScript</span>
                         <span class="btn">jQuery</span>
-                        <span class="btn">php5</span>
                     </dd>
 
-                    <dt class="col dim1half text-right padright">CMS</dt>
+                    <dt class="col dim1half text-right padright">@lang('index.skills-db')</dt>
                     <dd class="col dim1half text-left padleft">
-                        <span class="btn">WordPress</span>
-                        <span class="btn">Drupal</span>
-                        <span class="btn">Joomla</span>
+                        <span class="btn">DB/2</span>
+                        <span class="btn">MySQL</span>
+                        <span class="btn">MariaDB</span>
                     </dd>
 
+                    <dt class="col dim1half text-right padright">@lang('index.skills-os')</dt>
+                    <dd class="col dim1half text-left padleft">
+                        <span class="btn">Windows</span>
+                        <span class="btn">Unix/Linux</span>
+                    </dd>
                 </dl>
 
 
@@ -500,12 +607,14 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center">
 
-                <h2>Social Media</h2>
+                <h2>@lang('index.social-heading')</h2>
 
                 <p class="intro">
-                    If you would like to get in touch with me, feel free to use one of the social networks linked here.
-                    You can also find my <a class="smooth-scroll" href="#personalinfo">personal information</a> above or you can get in touch with me
-                    by submitting the <a class="smooth-scroll" href="#contact">contact form</a> below. I'm looking forward to hearing from you!
+                    @lang('index.social-desc-1')
+                    <a class="smooth-scroll" href="#personalinfo">@lang('index.social-desc-personal')</a>
+                    @lang('index.social-desc-2')
+                    <a class="smooth-scroll" href="#contact">@lang('index.social-desc-contact')</a>
+                    @lang('index.social-desc-3')
                 </p>
 
                 <div class="more">
@@ -539,40 +648,42 @@ if (App::getLocale() == "en") {
 
             <div class="col dimfull text-center">
 
-                <h2>Contact me</h2>
+                <h2>@lang('index.contact-heading')</h2>
 
-                <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p class="intro">
+                    @lang('index.contact-desc')
+                </p>
 
                 <form id="contact-form" method="post" action="#contact-form" class="text-left" data-form-action="./email.php">
 
                     <div class="email-confirmation hidden"><span class="glyphicons ok_2"><i></i></span> Email Success</div>
                     <div class="email-error hidden"><span class="glyphicons remove_2"><i></i></span> Email Error</div>
 
-                    <input type="hidden" name="emailto" value="contact@ocholabs.com">
-                    <input type="hidden" name="websitename" value="VCARD2">
+                    <input type="hidden" name="emailto" value="lukas.pradel@gmx.net">
+                    <input type="hidden" name="websitename" value="localhost">
 
                     <p>
-                        <label for="form-name">Name</label>
-                        <input type="text" class="mandatory" placeholder="Your name" id="form-name" name="form-name" value="">
-                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> Missing Name</span>
+                        <label for="form-name">@lang('index.contact-name')</label>
+                        <input type="text" class="mandatory" placeholder="@lang('index.contact-name-ph')" id="form-name" name="form-name" value="">
+                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> @lang('index.contact-name-error')</span>
                     </p>
                     <p>
-                        <label for="form-email">Email</label>
-                        <input type="text" class="mandatory" placeholder="Your email" id="form-email" name="form-email" value="">
-                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> Missing or invalid Email</span>
+                        <label for="form-email">@lang('index.contact-email')</label>
+                        <input type="text" class="mandatory" placeholder="@lang('index.contact-email-ph')" id="form-email" name="form-email" value="">
+                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> @lang('index.contact-email-error')</span>
                     </p>
                     <p>
-                        <label for="form-subject">Subject</label>
-                        <input type="text" placeholder="Email Subject" id="form-subject" name="form-subject" value="">
+                        <label for="form-subject">@lang('index.contact-subject')</label>
+                        <input type="text" placeholder="@lang('index.contact-subject-ph')" id="form-subject" name="form-subject" value="">
                     </p>
                     <p>
-                        <label for="form-message">Message</label>
-                        <textarea rows="6" class="mandatory" placeholder="Your message" id="form-message" name="form-message" ></textarea>
-                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> Missing Mail Message</span>
+                        <label for="form-message">@lang('index.contact-msg')</label>
+                        <textarea rows="6" class="mandatory" placeholder="@lang('index.contact-msg-ph')" id="form-message" name="form-message" ></textarea>
+                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> @lang('index.contact-msg-error')</span>
                     </p>
                     <span class="clear"></span>
                     <p>
-                        <button type="submit" class="btn btn-primary" name="form-submit">Submit</button>
+                        <button type="submit" class="btn btn-primary" name="form-submit">@lang('index.contact-submit')</button>
                     </p>
 
                 </form>

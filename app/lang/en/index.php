@@ -106,5 +106,46 @@ return array(
     'code-heading'          => 'Code',
     'code-desc-1'           => 'I do not maintain a dedicated project portfolio. If you want to take
                                 a look at the code I produce, check out my',
-    'code-desc-2'           => 'profile or my'
+    'code-desc-2'           => 'profile or my',
+
+    // Skills
+    'skills-heading'        => 'Skills',
+    'skills-desc'           => 'I picked up some tools of the trade along the way, some of which
+                                I\'m showing here.',
+    'skills-prog'           => 'Programming languages',
+    'skills-frameworks'     => 'Frameworks',
+    'skills-other'          => 'Other Tools/Skills',
+    'skills-build-dev'      => 'Build/Dev Tools',
+    'skills-servers'        => 'Application/Web servers',
+    'skills-testing'        => 'Testing',
+    'skills-ci'             => 'CI/CD, DevOps',
+    'skills-web-front'      => 'Web Frontend',
+    'skills-db'             => 'Databases',
+    'skills-os'             => 'OS',
+
+    // Social media
+    'social-heading'        => 'Social Media',
+    'social-desc-1'         => 'If you would like to get in touch with me, feel free to use one of the social networks linked here.
+                                You can also find my',
+    'social-desc-personal'  => 'personal information',
+    'social-desc-2'         => 'above or you can get in touch with me by submitting the',
+    'social-desc-contact'   => 'contact form',
+    'social-desc-3'         => 'below. I\'m looking forward to hearing from you!',
+
+    // Contact
+    'contact-heading'       => 'Contact me',
+    'contact-desc'          => '',
+    'contact-name'          => 'Name',
+    'contact-name-ph'       => 'Your name',
+    'contact-name-error'    => 'Please enter your name.',
+    'contact-email'         => 'Email',
+    'contact-email-ph'      => 'Your Email address',
+    'contact-email-error'   => 'Please enter a valid Email address.',
+    'contact-subject'       => 'Subject',
+    'contact-subject-ph'    => 'Your subject',
+    'contact-msg'           => 'Message',
+    'contact-msg-ph'        => 'Your message',
+    'contact-msg-error'     => 'Please enter your message.',
+    'contact-submit'        => 'Submit',
+
 );
