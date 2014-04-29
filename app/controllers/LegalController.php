@@ -3,6 +3,8 @@
 
 class LegalController extends BaseController {
 
+    protected $layout = 'layouts.master';
+
     public function indexAction() {
         App::setLocale("en");
 
@@ -10,6 +12,6 @@ class LegalController extends BaseController {
             App::setLocale("de");
         }
 
-        return View::make("legal");
+        $this->layout->content = View::make("legal");
     }
 } 

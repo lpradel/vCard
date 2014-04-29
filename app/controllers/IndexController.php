@@ -3,6 +3,8 @@
 
 class IndexController extends BaseController {
 
+    protected $layout = 'layouts.master';
+
     public function indexAction() {
         App::setLocale("en");
 
@@ -10,6 +12,6 @@ class IndexController extends BaseController {
             App::setLocale("de");
         }
 
-        return View::make("index");
+        $this->layout->content = View::make("index");
     }
 } 
