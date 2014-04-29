@@ -29,11 +29,10 @@ if (App::getLocale() == "en") {
     <!-- Favicons
     ================================================== -->
     <link rel='shortcut icon' href='./images/favicon.ico'>
-    <!--
-    <link rel='apple-touch-icon' href='./images/apple-touch-icon.png'>
-    <link rel='apple-touch-icon' sizes='72x72' href='./images/apple-touch-icon-72x72.png'>
-    <link rel='apple-touch-icon' sizes='114x114' href='./images/apple-touch-icon-114x114.png'>
-    -->
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-touch-icon-ipad-retina-152x152.png">
 
     <!-- CSS
     ================================================== -->
@@ -770,6 +769,7 @@ if (App::getLocale() == "en") {
 ================================================== -->
 
 <script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.migrate.min.js"></script>
 <script type='text/javascript' src='./js/klass.min.js'></script>
 <script type='text/javascript' src='./js/jquery.easing.1.3.js'></script>
 <script type='text/javascript' src='./js/jquery.sidr.min.js'></script>
