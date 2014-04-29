@@ -63,16 +63,11 @@ if (App::getLocale() == "en") {
             <span class="">Lukas Pradel |</span>
             <span class="">Software Engineer</span>
         </div>
-        @if (App::getLocale() == "en")
-        <a href="/?lang=de" id="langtrigger">
-            <span class="pull-right icon lang">DE</span>
-            @else
-            <a href="/?lang=en" id="langtrigger">
-                <span class="pull-right icon lang">EN</span>
-                @endif
-            </a>
 
-            <a href="#sidr" id="menutrigger" class="pull-right btn icon transparent"><span class="glyphicons justify"><i></i></span></a><span class="clear"></span>
+        @section('language-links')
+        @show
+
+        <a href="#sidr" id="menutrigger" class="pull-right btn icon transparent"><span class="glyphicons justify"><i></i></span></a><span class="clear"></span>
     </div><!-- /#header -->
 </header>
 

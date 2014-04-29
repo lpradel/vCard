@@ -4,6 +4,18 @@
 Lukas Pradel
 @stop
 
+@section('language-links')
+@if (App::getLocale() == "en")
+<a href="/?lang=de" id="langtrigger">
+    <span class="pull-right icon lang">DE</span>
+</a>
+@else
+<a href="/?lang=en" id="langtrigger">
+    <span class="pull-right icon lang">EN</span>
+</a>
+@endif
+@stop
+
 @section('sidebar-nav')
 <nav>
     <div id="sidr" class="hidden">
