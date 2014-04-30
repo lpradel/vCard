@@ -123,7 +123,7 @@ Lukas Pradel
                     </dd>
 
                     <dt class="col dim1half text-right padright">@lang('index.personal-email')</dt>
-                    <dd class="col dim1half text-left padleft">@lang('index.personal-email-val')</dd>
+                    <dd class="col dim1half text-left padleft"><a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501h-OD9C75BfXnkoGnpom4HA\75\75\46c\0754IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">l...</a>@googlemail.com</dd>
 
                     <dt class="col dim1half text-right padright">@lang('index.personal-phone')</dt>
                     <dd class="col dim1half text-left padleft">@lang('index.personal-phone-val')</dd>
@@ -567,7 +567,7 @@ Lukas Pradel
                     <a href="http://steamcommunity.com/id/boonzsteam/" class="btn transparent"><span class="icomoon icomoon-steam2"></span><span class="icomoon-label"> Steam</span></a>
                     <a href="https://www.xing.com/profile/Lukas_Pradel/" class="btn transparent"><span class="icomoon icomoon-xing"></span><span class="icomoon-label"> XING</span></a>
                     <a href="https://github.com/lpradel/" class="btn transparent"><span class="icomoon icomoon-github3"></span><span class="icomoon-label"> github</span></a>
-                    <a href="mailto:&#108;&#117;&#107;&#097;&#115;&#046;&#112;&#114;&#097;&#100;&#101;&#108;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="btn transparent"><span class="icomoon icomoon-mail3"></span><span class="icomoon-label"> E-Mail</span></a>
+                    <a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" class="btn transparent"><span class="icomoon icomoon-mail3"></span><span class="icomoon-label"> E-Mail</span></a>
                 </div>
 
 

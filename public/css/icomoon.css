@@ -30,6 +30,25 @@ html, html .halflings {-webkit-font-smoothing: antialiased !important;}
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-big {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 35px;
+    display: inline-block;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .icomoon-label {
     vertical-align: middle;
 }

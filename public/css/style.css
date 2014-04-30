@@ -35,6 +35,7 @@ a:hover {color: #ff6760;}
 
 p.intro{font-size: 24px;font-weight: 300;line-height: 34px;padding-bottom: 45px;}
 p.intro.big{font-size: 34px;line-height: 44px; padding-bottom: 30px;}
+p.just{text-align: justify;}
 
 .post-content ol, .post-content ul {list-style: none outside none; margin-bottom: 15px;}
 .post-content ol li:before, .post-content ul li:before {content: "."; font-size: 20px; width: 15px; height: 15px; line-height: 0; float: left; display: inline-block; margin-top: 6px; color: #ff6760;}
@@ -44,6 +45,7 @@ p.intro.big{font-size: 34px;line-height: 44px; padding-bottom: 30px;}
 dl, dl.row {margin-bottom: 15px !important; overflow: hidden;}
 dl dt {font-weight: 600;}
 dl dd {margin-bottom: 5px !important;}
+.legal-col {color: #333333;}
 
 . {padding: 10px; background: #fff; overflow: hidden;}
 
@@ -215,6 +217,7 @@ width: 20px;
 #tweetr {background-image: url(/images/bg-bullhorn.png); }
 #contact {background-image: url(/images/bg-envelope.png); }
 #download {background-image: url(/images/bg-paperclip.png); }
+#legal {}
 
 /* home block */
 #home .wrap .row {padding-top: 60px; padding-bottom: 30px !important;}
