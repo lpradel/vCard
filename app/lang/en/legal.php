@@ -2,6 +2,7 @@
 
 return array(
     'page-title'                => 'Lukas Pradel &raquo; Legal Disclosure',
+    'back-button'               => 'Back',
 
     // Header
     'legal-disclosure'          => 'Legal Disclosure',

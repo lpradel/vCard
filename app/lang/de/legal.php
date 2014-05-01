@@ -2,6 +2,7 @@
 
 return array(
     'page-title'                => 'Lukas Pradel &raquo; Impressum',
+    'back-button'               => 'Zur&uuml;ck',
 
     // Header
     'legal-disclosure'          => 'Impressum',

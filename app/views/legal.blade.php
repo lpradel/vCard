@@ -111,6 +111,13 @@
                 </p>
 
                 <p>@lang('legal.privacy-source'): <a href="http://www.e-recht24.de/muster-datenschutzerklaerung.html">eRecht24</a></p>
+
+                <br/>
+                <br/>
+
+                <p>
+                    <a class="btn" href="/?lang=<?=App::getLocale()?>">@lang('legal.back-button')</a>
+                </p>
             </div><!-- /.col -->
 
         </div><!-- /.row  -->
