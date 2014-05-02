@@ -32,19 +32,19 @@ if (App::getLocale() == "en") {
 
     <!-- Favicons
     ================================================== -->
-    <link rel='shortcut icon' href='./images/favicon.ico'>
-    <link rel="apple-touch-icon" href="./images/apple-touch-icon-iphone-60x60.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-touch-icon-ipad-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-touch-icon-iphone-retina-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-touch-icon-ipad-retina-152x152.png">
+    <link rel='shortcut icon' href='/images/favicon.ico'>
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-ipad-retina-152x152.png">
 
     <!-- CSS
     ================================================== -->
 
-    <link rel="stylesheet" id="o-responsive-css" href="./css/o-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" id="themestyle-css" href="./css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="glyphicons-css" href="./css/glyphicons.css" type="text/css" media="all">
-    <link rel="stylesheet" id="icomoon-css" href="./css/icomoon.css" type="text/css" media="all">
+    <link rel="stylesheet" id="o-responsive-css" href="/css/o-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" id="themestyle-css" href="/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="glyphicons-css" href="/css/glyphicons.css" type="text/css" media="all">
+    <link rel="stylesheet" id="icomoon-css" href="/css/icomoon.css" type="text/css" media="all">
 
     <!-- Google Fonts
     ================================================== -->
@@ -120,12 +120,12 @@ if (App::getLocale() == "en") {
 <!-- End Document
 ================================================== -->
 
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/jquery.migrate.min.js"></script>
-<script type="text/javascript" src="./js/klass.min.js"></script>
-<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="./js/jquery.sidr.min.js"></script>
-<script type="text/javascript" src="./js/scripts.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.migrate.min.js"></script>
+<script type="text/javascript" src="/js/klass.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/jquery.sidr.min.js"></script>
+<script type="text/javascript" src="/js/scripts.js"></script>
 
 
 </body>
