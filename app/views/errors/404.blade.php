@@ -64,8 +64,8 @@
             <div class="logo-panda"><img src="/images/logo-pd.png" alt=""></div>
         </header>
         <h2 class="rs title-404">oh, it’s gone :(</h2>
-        <p class="rs">An Angry Panda has eaten the page you are looking for,
-            you can get back here</p>
+        <p class="rs">An Angry Panda has eaten the page you are looking for!
+            You can get back here</p>
         <div class="panda-bg-arrow"></div>
 
         <div id="responsivemenu"></div>
