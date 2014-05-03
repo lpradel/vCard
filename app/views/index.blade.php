@@ -657,7 +657,7 @@ Lukas Pradel
                     @lang('index.cv-desc')
                 </p>
 
-                <a href="#" class="btn">Download</a>
+                <a href="/public/download/cv.pdf" class="btn">Download</a>
 
 
             </div><!-- /.col -->
