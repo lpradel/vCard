@@ -598,13 +598,10 @@ Lukas Pradel
                     @lang('index.contact-desc')
                 </p>
 
-                <form id="contact-form" method="post" action="#contact-form" class="text-left" data-form-action="./email.php">
+                <form id="contact-form" method="post" action="#contact-form" class="text-left" data-form-action="contact">
 
                     <div class="email-confirmation hidden"><span class="glyphicons ok_2"><i></i></span> @lang('index.contact-success')</div>
                     <div class="email-error hidden"><span class="glyphicons remove_2"><i></i></span> @lang('index.contact-error')</div>
-
-                    <input type="hidden" name="emailto" value="lukas.pradel@gmx.net">
-                    <input type="hidden" name="websitename" value="localhost">
 
                     <p>
                         <label for="form-name">@lang('index.contact-name')</label>

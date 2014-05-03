@@ -24,4 +24,13 @@ foreach ($locales as $locale) {
     Route::get($legal, 'LegalController@indexAction');
 }
 
+Route::post('contact', function() {
+
+    $name = Input::get('form-name');
+    $email = Input::get('form-email');
+    $subject = Input::get('form-subject');
+    $msg = Input::get('form-message');
+    Contact::sendContactFormMail($name, $email, $subject, $msg);
+});
+
 Route::get('/', 'IndexController@indexAction');
