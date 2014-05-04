@@ -32,7 +32,7 @@ if (App::getLocale() == "en") {
 
     <!-- Favicons
     ================================================== -->
-    <link rel='shortcut icon' href='/images/favicon.ico'>
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon-iphone-60x60.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-ipad-76x76.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-iphone-retina-120x120.png">
