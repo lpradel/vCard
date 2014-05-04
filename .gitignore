@@ -9,3 +9,4 @@ Thumbs.db
 /app/config/database.php
 /app/config/mail.php
 /app/models/Contact.php
+/.idea/workspace.xml
