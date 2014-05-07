@@ -98,7 +98,7 @@ if (App::getLocale() == "en") {
                         </a> |
                         Built with <a href="http://laravel.com/">Laravel/4.1.25</a> |
                         Hosted at <a href="http://digitalocean.com/">DigitalOcean</a> |
-                        Powered by <a href="http://nginx.org/">nginx/1.5.13</a>
+                        Powered by <a href="http://nginx.org/">nginx/1.6.0</a>
                     </p>
 
 

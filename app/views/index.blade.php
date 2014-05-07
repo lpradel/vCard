@@ -170,16 +170,12 @@ Lukas Pradel
                         <p>
                             @lang('index.edu-msc-desc')
                         </p>
+                        @lang('index.edu-msc-notable')
                         <ul>
-                            <li>@lang('index.edu-msc-notable')
-                                <ul>
-                                    <li>@lang('index.edu-msc-notable-1')</li>
-                                    <li>@lang('index.edu-msc-notable-2')</li>
-                                    <li>@lang('index.edu-msc-notable-3')</li>
-                                    <li>@lang('index.edu-msc-notable-4')</li>
-                                </ul>
-                            </li>
-                            <li>@lang('index.edu-msc-gpa')</li>
+                            <li>@lang('index.edu-msc-notable-1')</li>
+                            <li>@lang('index.edu-msc-notable-2')</li>
+                            <li>@lang('index.edu-msc-notable-3')</li>
+                            <li>@lang('index.edu-msc-notable-4')</li>
                         </ul>
                         <div class="more">
                             <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">@lang('index.edu-msc-school-web')</a>
@@ -199,17 +195,12 @@ Lukas Pradel
                         <p>
                             @lang('index.edu-bsc-desc')
                         </p>
+                        @lang('index.edu-bsc-notable')
                         <ul>
-                            <li>@lang('index.edu-bsc-notable')
-                                <ul>
-                                    <li>@lang('index.edu-bsc-notable-1')</li>
-                                    <li>@lang('index.edu-bsc-notable-2')</li>
-                                    <li>@lang('index.edu-bsc-notable-3')</li>
-                                    <li>@lang('index.edu-bsc-notable-4')</li>
-                                </ul>
-                            </li>
-                            <li>@lang('index.edu-bsc-thesis-grade')</li>
-                            <li>@lang('index.edu-bsc-gpa')</li>
+                            <li>@lang('index.edu-bsc-notable-1')</li>
+                            <li>@lang('index.edu-bsc-notable-2')</li>
+                            <li>@lang('index.edu-bsc-notable-3')</li>
+                            <li>@lang('index.edu-bsc-notable-4')</li>
                         </ul>
                         <div class="more">
                             <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">@lang('index.edu-bsc-school-web')</a>
@@ -566,8 +557,8 @@ Lukas Pradel
                     <a href="skype:bahama-teddy?userinfo" class="btn transparent"><span class="icomoon icomoon-skype"></span><span class="icomoon-label"> Skype</span></a>
                     <a href="http://steamcommunity.com/id/boonzsteam/" class="btn transparent"><span class="icomoon icomoon-steam2"></span><span class="icomoon-label"> Steam</span></a>
                     <a href="https://www.xing.com/profile/Lukas_Pradel/" class="btn transparent"><span class="icomoon icomoon-xing"></span><span class="icomoon-label"> XING</span></a>
+                    <a href="https://www.linkedin.com/in/lukaspradel" class="btn transparent"><span class="icomoon icomoon-linkedin"></span><span class="icomoon-label"> LinkedIn</span></a>
                     <a href="https://github.com/lpradel/" class="btn transparent"><span class="icomoon icomoon-github3"></span><span class="icomoon-label"> github</span></a>
-                    <a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" class="btn transparent"><span class="icomoon icomoon-mail3"></span><span class="icomoon-label"> E-Mail</span></a>
                 </div>
 
 
