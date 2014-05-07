@@ -129,7 +129,7 @@ Lukas Pradel
                     <dd class="col dim1half text-left padleft">@lang('index.personal-phone-val')</dd>
 
                     <dt class="col dim1half text-right padright">@lang('index.personal-web')</dt>
-                    <dd class="col dim1half text-left padleft"><a href="#">@lang('index.personal-web-val')</a></dd>
+                    <dd class="col dim1half text-left padleft"><a href="http://lukaspradel.com">@lang('index.personal-web-val')</a></dd>
                 </dl>
 
             </div><!-- /.col -->
