@@ -29,7 +29,7 @@ return array(
     'aboutme-main-4'        => 'as a student assistant',
     'aboutme-main-5'        => 'and at',
     'aboutme-main-ad'       => 'adesso AG',
-    'aboutme-main-6'        => 'as a junior software engineer.',
+    'aboutme-main-6'        => 'as a student employee.',
     'aboutme-main-7'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
 
     // Personal information
