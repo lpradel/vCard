@@ -37,540 +37,428 @@ Lukas Pradel
 @stop
 
 @section('main')
-<div id="home" class="sugar-container">
+<!-- BEGIN ABOUT SECTION -->
+<section id="about" class="cont-sec about-sec">
 
-    <div class="container wrap">
+    <div class="cont-b">
 
-        <div class="row">
+        <div class="container">
 
-            <div class="col dimfull text-center" id="animation">
+            <div class="intro">
 
-                <div id="ccimage" class="img-circle"><img src="./images/me.jpg" alt=""></div>
-                <p id="hello" class=" ">@lang('index.header-hello')</p>
-                <h1 id="ccname" class=" ">Lukas PRADEL</h1>
-                <p id="iam" class=" ">@lang('index.header-i-am')</p>
-                <h2 id="ccfunction" class=" ">@lang('index.header-job')</h2>
+                <h1 class="fn">Lukas Pradel</h1>
+                <div class="desc">@lang('index.header-job')</div>
+                <ul class="social-nav">
+                    <li><a href="https://twitter.com/lukaspradel" class="item-2"></a></li>
+                    <li><a href="https://plus.google.com/+LukasPradel/" class="item-3"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lukaspradel" class="item-5"></a></li>
+                    <li><a href="https://www.xing.com/profile/Lukas_Pradel/" class="item-6"></a></li>
+                    <li><a href="https://github.com/lpradel/" class="item-8"></a></li>
+                    <li><a href="https://www.youtube.com/user/LukasPradel" class="item-10"></a></li>
+                </ul>
+                <div class="center">
+                    <a href="#contacts" class="btn-2 btn-scroll">Hire me</a>
+                    <a href="" class="btn-2">Download vcard</a>
+                </div>
 
-            </div><!-- /.col -->
+            </div>
 
-        </div><!-- /.row  -->
+        </div>
 
-    </div><!-- /.container -->
+    </div>
 
-</div><!-- /#home -->
+    <div class="cont-b-2">
 
+        <div class="container">
 
-<div id="about" class="cream-container parallax" data-speed="1" data-offsetY="-150">
+            <div class="about clearfix">
+                <div class="photo">
+                    <img width="150" height="200" alt="" src="/images/me.jpg">
+                </div>
+                <div class="inner">
+                    <p class="intro-text">
+                        @lang('index.aboutme-main-1')
+                        <a href="http://www.cs.tu-dortmund.de/nps/en/Home/index.html">@lang('index.aboutme-main-tud')</a>
+                        @lang('index.aboutme-main-2')
+                        @lang('index.aboutme-main-3')
+                        <a href="http://ls2-www.informatik.uni-dortmund.de/">@lang('index.aboutme-main-ls2')</a>
+                        @lang('index.aboutme-main-4')
+                        @lang('index.aboutme-main-5')
+                        <a href="http://www.adesso.de/en/">@lang('index.aboutme-main-ad')</a>
+                        @lang('index.aboutme-main-6')
+                        <br/>
+                        <br/>
+                        @lang('index.aboutme-main-7')
+                        <a href="http://dotabuff.com/players/91417049">Dota 2</a>.
+                    </p>
+                </div>
+            </div>
 
-    <div class="icon-container"><div><span class="glyphicons user"><i></i></span></div></div>
+        </div>
 
-    <div class="container wrap">
+    </div>
 
-        <div class="row">
+</section>
+<!-- END ABOUT SECTION -->
 
-            <div class="col dimfull text-center">
+<!-- BEGIN RESUME SECTION -->
+<section id="resume" class="cont-sec resume-sec">
 
-                <h2>@lang('index.aboutme-heading')</h2>
+    <div class="sec-title">
 
-                <p class="intro big">
-                    @lang('index.aboutme-main-1')
-                    <a href="http://www.cs.tu-dortmund.de/nps/en/Home/index.html">@lang('index.aboutme-main-tud')</a>
-                    @lang('index.aboutme-main-2')
-                    @lang('index.aboutme-main-3')
-                    <a href="http://ls2-www.informatik.uni-dortmund.de/">@lang('index.aboutme-main-ls2')</a>
-                    @lang('index.aboutme-main-4')
-                    @lang('index.aboutme-main-5')
-                    <a href="http://www.adesso.de/en/">@lang('index.aboutme-main-ad')</a>
-                    @lang('index.aboutme-main-6')
-                    <br/>
-                    <br/>
-                    @lang('index.aboutme-main-7')
-                    <a href="http://dotabuff.com/players/91417049">Dota 2</a>.
-                </p>
+        <div class="container">
 
+            <h2>Resume</h2>
 
-            </div><!-- /.col -->
+        </div>
 
-        </div><!-- /.row  -->
+    </div>
 
-    </div><!-- /.container -->
+    <div class="container">
 
-</div><!-- /#about -->
+        <div class="cols">
 
+            <div class="col col-1-2">
 
+                <h3>@lang('index.edu-heading')</h3>
 
-<div id="personalinfo" class="coffee-container parallax" data-speed="2" data-offsetY="-150">
+                <div class="exp scroll">
+                    <div class="date">@lang('index.edu-msc-period')</div>
+                    <h4>
+                        @lang('index.edu-msc-school')
+                        <span>/ @lang('index.edu-msc-title') </span>
+                    </h4>
+                    <p>
+                        @lang('index.edu-msc-desc')
+                    </p>
+                    <span>@lang('index.edu-msc-notable')</span>
+                    <ul class="spaced">
+                        <li>@lang('index.edu-msc-notable-1')</li>
+                        <li>@lang('index.edu-msc-notable-2')</li>
+                        <li>@lang('index.edu-msc-notable-3')</li>
+                        <li>@lang('index.edu-msc-notable-4')</li>
+                    </ul>
+                    <div class="date">@lang('index.edu-bsc-period')</div>
+                    <h4>
+                        @lang('index.edu-bsc-school')
+                        <span>/ @lang('index.edu-bsc-title') </span>
+                    </h4>
+                    <p>
+                        @lang('index.edu-bsc-desc')
+                    </p>
+                    <span>@lang('index.edu-bsc-notable')</span>
+                    <ul class="spaced">
+                        <li>@lang('index.edu-bsc-notable-1')</li>
+                        <li>@lang('index.edu-bsc-notable-2')</li>
+                        <li>@lang('index.edu-bsc-notable-3')</li>
+                        <li>@lang('index.edu-bsc-notable-4')</li>
+                    </ul>
+                </div>
 
-    <div class="icon-container"><div><span class="glyphicons nameplate"><i></i></span></div></div>
+            </div>
 
-    <div class="container wrap">
+            <div class="col col-1-2">
 
-        <div class="row">
+                <h3>@lang('index.emp-heading')</h3>
 
-            <div class="col dimfull text-center">
+                <div class="exp scroll">
+                    <div class="date">@lang('index.emp-ad-period')</div>
+                    <h4>
+                        @lang('index.emp-ad-company')
+                        <span>/ @lang('index.emp-ad-position')</span>
+                    </h4>
+                    <p>@lang('index.emp-ad-desc')</p>
+                    <div class="date">@lang('index.emp-tud-stud-period')</div>
+                    <h4>
+                        @lang('index.emp-tud-stud-company')
+                        <span>/ @lang('index.emp-tud-stud-position')</span>
+                    </h4>
+                    <p>@lang('index.emp-tud-stud-desc')</p>
+                    <div class="date">@lang('index.emp-due-period')</div>
+                    <h4>@lang('index.emp-due-company')
+                        <span>/ @lang('index.emp-due-position')</span></h4>
+                    <p>@lang('index.emp-due-desc')</p>
+                </div>
 
-                <h2>@lang('index.personal-heading')</h2>
+            </div>
 
-                <dl class="row">
-                    <dt class="col dim1half text-right padright">@lang('index.personal-dob')</dt>
-                    <dd class="col dim1half text-left padleft">@lang('index.personal-dob-val')</dd>
+        </div>
 
-                    <dt class="col dim1half text-right padright">@lang('index.personal-adr')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        @lang('index.personal-adr-val-1')<br/>
-                        @lang('index.personal-adr-val-2')<br/>
-                        @lang('index.personal-adr-val-3')
-                    </dd>
+    </div>
 
-                    <dt class="col dim1half text-right padright">@lang('index.personal-email')</dt>
-                    <dd class="col dim1half text-left padleft"><a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501h-OD9C75BfXnkoGnpom4HA\75\75\46c\0754IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">l...</a>@googlemail.com</dd>
+    <hr>
 
-                    <dt class="col dim1half text-right padright">@lang('index.personal-phone')</dt>
-                    <dd class="col dim1half text-left padleft">@lang('index.personal-phone-val')</dd>
+    <div class="container">
 
-                    <dt class="col dim1half text-right padright">@lang('index.personal-web')</dt>
-                    <dd class="col dim1half text-left padleft"><a href="http://lukaspradel.com">@lang('index.personal-web-val')</a></dd>
-                </dl>
+        <div class="cols">
 
-            </div><!-- /.col -->
+            <div class="col col-1-2">
 
-        </div><!-- /.row  -->
+                <h3>@lang('index.skills-heading')</h3>
 
-
-
-    </div><!-- /.container -->
-
-</div><!-- /#personalinfo -->
-
-
-
-
-
-
-<div id="education" class="cream-container parallax" data-speed="4" data-offsetY="-150">
-
-    <div class="icon-container"><div><span class="glyphicons certificate"><i></i></span></div></div>
-
-    <div class="container wrap">
-
-        <div class="row">
-
-            <div class="col dimfull text-center">
-
-                <h2>@lang('index.edu-heading')</h2>
-
-                <div class="position2 row">
-                    <div class="col dim1third text-right padright">
-                        <div class="date-detail">@lang('index.edu-msc-period')</div>
-                        <h3>@lang('index.edu-msc-school')</h3>
-                        <p><strong>@lang('index.edu-msc-city')</strong></p>
+                <div class="skills">
+                    <h5>@lang('index.skills-prog')</h5>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                Java SE -
+                                <span class="val">100%</span>
+                            </h4>
+                        </div>
                     </div>
-                    <div class="col dim2thirds text-left padleft post-content">
-                        <h4>@lang('index.edu-msc-title')</h4>
-                        <p>
-                            @lang('index.edu-msc-desc')
-                        </p>
-                        @lang('index.edu-msc-notable')
-                        <ul>
-                            <li>@lang('index.edu-msc-notable-1')</li>
-                            <li>@lang('index.edu-msc-notable-2')</li>
-                            <li>@lang('index.edu-msc-notable-3')</li>
-                            <li>@lang('index.edu-msc-notable-4')</li>
-                        </ul>
-                        <div class="more">
-                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">@lang('index.edu-msc-school-web')</a>
-                            <a class="btn" href="https://github.com/lpradel/ImplMWM">@lang('index.edu-msc-project-1')</a>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                Java EE -
+                                <span class="val">80%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                C++ -
+                                <span class="val">65%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                PHP -
+                                <span class="val">60%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                C -
+                                <span class="val">45%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                C# -
+                                <span class="val">35%</span>
+                            </h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="position2 row">
-                    <div class="col dim1third text-right padright">
-                        <div class="date-detail">@lang('index.edu-bsc-period')</div>
-                        <h3>@lang('index.edu-bsc-school')</h3>
-                        <p><strong>@lang('index.edu-bsc-city')</strong></p>
+                <div class="skills">
+                    <h5>@lang('index.skills-frameworks')</h5>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                Struts -
+                                <span class="val">95%</span>
+                            </h4>
+                        </div>
                     </div>
-                    <div class="col dim2thirds text-left padleft post-content">
-                        <h4>@lang('index.edu-bsc-title')</h4>
-                        <p>
-                            @lang('index.edu-bsc-desc')
-                        </p>
-                        @lang('index.edu-bsc-notable')
-                        <ul>
-                            <li>@lang('index.edu-bsc-notable-1')</li>
-                            <li>@lang('index.edu-bsc-notable-2')</li>
-                            <li>@lang('index.edu-bsc-notable-3')</li>
-                            <li>@lang('index.edu-bsc-notable-4')</li>
-                        </ul>
-                        <div class="more">
-                            <a class="btn" href="https://www.tu-dortmund.de/uni/International/index.html">@lang('index.edu-bsc-school-web')</a>
-                            <a class="btn" href="https://github.com/lpradel/Go">@lang('index.edu-bsc-project-1')</a>
-                            <a class="btn" href="https://github.com/lpradel/Schatzsuche">@lang('index.edu-bsc-project-2')</a>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                Spring MVC -
+                                <span class="val">80%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                JSF -
+                                <span class="val">80%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                Wicket -
+                                <span class="val">55%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                Laravel -
+                                <span class="val">50%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                CodeIgniter -
+                                <span class="val">50%</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress">
+                            <h4>
+                                ASP.NET MVC -
+                                <span class="val">45%</span>
+                            </h4>
                         </div>
                     </div>
                 </div>
+            </div>
 
-            </div><!-- /.col -->
-
-        </div><!-- /.row  -->
-
-    </div><!-- /.container -->
-
-</div><!-- /#education -->
-
-
-
-
-
-
-<div id="employment" class="coffee-container parallax" data-speed="8" data-offsetY="-150">
-
-    <div class="icon-container"><div><span class="glyphicons share_alt"><i></i></span></div></div>
-
-    <div class="container wrap">
-
-        <div class="row">
-
-            <div class="col dimfull text-center">
-
-                <h2>@lang('index.emp-heading')</h2>
-
-                <p class="intro">
-                    @lang('index.emp-desc')
-                </p>
-
-
-                <div class="date-detail">@lang('index.emp-ad-period')</div>
-                <div class="position">
-                    <h3>@lang('index.emp-ad-company')</h3>
-                    <h4>@lang('index.emp-ad-position')</h4>
-                    <p>
-                        @lang('index.emp-ad-desc')
-                    </p>
-                    <div class="more">
-                        <a class="btn" href="https://adesso.de/en/index.jsp">@lang('index.emp-ad-web')</a>
-                    </div>
-                </div>
-
-                <div class="date-detail">@lang('index.emp-tud-stud-period')</div>
-                <div class="position">
-                    <h3>@lang('index.emp-tud-stud-company')</h3>
-                    <h4>@lang('index.emp-tud-stud-position')</h4>
-                    <p>
-                        @lang('index.emp-tud-stud-desc')
-                    </p>
-                    <div class="more">
-                        <a class="btn" href="http://ls2-www.cs.uni-dortmund.de/">@lang('index.emp-tud-stud-web')</a>
-                    </div>
-                </div>
-
-
-                <div class="date-detail">@lang('index.emp-due-period')</div>
-                <div class="position last">
-                    <h3>@lang('index.emp-due-company')</h3>
-                    <h4>@lang('index.emp-due-position')</h4>
-                    <p>
-                        @lang('index.emp-due-desc')
-                    </p>
-                    <div class="more">
-                        <a class="btn" href="https://www.uni-due.de/en/">@lang('index.emp-due-web')</a>
-                    </div>
-                </div>
-
-
-
-            </div><!-- /.col -->
-
-        </div><!-- /.row  -->
-
-    </div><!-- /.container -->
-
-</div><!-- /#employment -->
-
-
-<div id="code" class="cream-container parallax" data-speed="22" data-offsetY="-150">
-
-    <div class="icon-container"><div><span class="glyphicons briefcase"><i></i></span></div></div>
-
-    <div class="container wrap">
-
-        <div class="row">
-
-            <div class="col dimfull text-center">
-
-                <h2>@lang('index.code-heading')</h2>
-
-                <p class="intro">
-                    @lang('index.code-desc-1')
-                    <a href="https://github.com/lpradel/"><span class="icomoon icomoon-github3"></span><span> github</span></a>
-                    @lang('index.code-desc-2')
-                    <a href="http://osrc.dfm.io/lpradel">Open Source Report Card</a>.
-                </p>
-
-
-            </div><!-- /.col -->
-
-        </div><!-- /.row  -->
-
-    </div><!-- /.container -->
-
-</div><!-- /#portfolio -->
-
-
-
-<div id="skills" class="coffee-container parallax" data-speed="16" data-offsetY="-150">
-
-    <div class="icon-container"><div><span class="glyphicons cogwheels"><i></i></span></div></div>
-
-    <div class="container wrap">
-
-        <div class="row">
-
-            <div class="col dimfull text-center skills">
-
-                <h2>@lang('index.skills-heading')</h2>
-
-                <p class="intro">
-                    @lang('index.skills-desc')
-                </p>
-
-                <h3>@lang('index.skills-prog')</h3>
-                <dl class="row skills">
-                    <dt class="col dim1half text-right padright">Java (SE)</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">Java (EE)</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">C++</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">PHP</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">C</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">C#</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                </dl><br/>
-
-                <h3>@lang('index.skills-frameworks')</h3>
-                <dl class="row skills">
-                    <dt class="col dim1half text-right padright">Struts</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">Spring MVC</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">JSF</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">Wicket</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">Laravel</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">CodeIgniter</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-
-                    <dt class="col dim1half text-right padright">ASP.NET MVC</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons star"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                        <span class="glyphicons dislikes"><i></i></span>
-                    </dd>
-                </dl><br/>
-
+            <div class="col col-1-2">
                 <h3>@lang('index.skills-other')</h3>
-                <dl class="row">
-                    <dt class="col dim1half text-right padright">@lang('index.skills-build-dev')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="btn">Eclipse</span>
-                        <span class="btn">Gradle</span>
-                        <span class="btn">Maven</span>
-                        <span class="btn">Ant</span>
-                        <span class="btn">DBVisualizer</span>
-                        <span class="btn">Visual Studio</span>
-                        <span class="btn">CMake</span>
-                    </dd>
+                <h5>@lang('index.skills-build-dev')</h5>
+                <ul class="tools clearfix">
+                    <li>Eclipse</li>
+                    <li>Gradle</li>
+                    <li>Maven</li>
+                    <li>Ant</li>
+                    <li>DBVisualizer</li>
+                    <li>Visual Studio</li>
+                    <li>CMake</li>
+                </ul>
 
-                    <dt class="col dim1half text-right padright">@lang('index.skills-servers')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="btn">JBoss</span>
-                        <span class="btn">Jakarta Tomcat</span>
-                        <span class="btn">Apache</span>
-                        <span class="btn">Nginx</span>
-                    </dd>
+                <h5>@lang('index.skills-servers')</h5>
+                <ul class="tools clearfix">
+                    <li>JBoss</li>
+                    <li>Tomcat</li>
+                    <li>Apache</li>
+                    <li>Nginx</li>
+                </ul>
 
-                    <dt class="col dim1half text-right padright">@lang('index.skills-testing')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="btn">JUnit</span>
-                        <span class="btn">TestNG</span>
-                        <span class="btn">Mockito</span>
-                        <span class="btn">PowerMock</span>
-                        <span class="btn">Selenium</span>
-                        <span class="btn">GoogleTest</span>
-                        <span class="btn">CUTE</span>
-                    </dd>
+                <h5>@lang('index.skills-testing')</h5>
+                <ul class="tools clearfix">
+                    <li>JUnit</li>
+                    <li>TestNG</li>
+                    <li>Mockito</li>
+                    <li>PowerMock</li>
+                    <li>Selenium</li>
+                    <li>GoogleTest</li>
+                    <li>CUTE</li>
+                </ul>
 
-                    <dt class="col dim1half text-right padright">@lang('index.skills-ci')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="btn">Jenkins</span>
-                        <span class="btn">Hudson</span>
-                        <span class="btn">Travis CI</span>
-                        <span class="btn">Vagrant</span>
-                        <span class="btn">Puppet</span>
-                    </dd>
+                <h5>@lang('index.skills-ci')</h5>
+                <ul class="tools clearfix">
+                    <li>Jenkins</li>
+                    <li>Hudson</li>
+                    <li>Travis CI</li>
+                    <li>Vagrant</li>
+                    <li>Puppet</li>
+                    <li>Docker</li>
+                </ul>
 
-                    <dt class="col dim1half text-right padright">@lang('index.skills-web-front')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="btn">HTML</span>
-                        <span class="btn">CSS</span>
-                        <span class="btn">javaScript</span>
-                        <span class="btn">jQuery</span>
-                    </dd>
+                <h5>@lang('index.skills-web-front')</h5>
+                <ul class="tools clearfix">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
 
-                    <dt class="col dim1half text-right padright">@lang('index.skills-db')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="btn">DB/2</span>
-                        <span class="btn">MySQL</span>
-                        <span class="btn">MariaDB</span>
-                    </dd>
+                <h5>@lang('index.skills-db')</h5>
+                <ul class="tools clearfix">
+                    <li>DB/2</li>
+                    <li>MySQL</li>
+                    <li>MariaDB</li>
+                </ul>
 
-                    <dt class="col dim1half text-right padright">@lang('index.skills-os')</dt>
-                    <dd class="col dim1half text-left padleft">
-                        <span class="btn">Windows</span>
-                        <span class="btn">Unix/Linux</span>
-                    </dd>
-                </dl>
+                <h5>@lang('index.skills-os')</h5>
+                <ul class="tools clearfix">
+                    <li>Windows</li>
+                    <li>UNIX / Linux</li>
+                </ul>
+            </div>
 
+        </div>
 
-            </div><!-- /.col -->
+    </div>
 
-        </div><!-- /.row  -->
+</section>
+<!-- END RESUME SECTION -->
 
-    </div><!-- /.container -->
+<!-- BEGIN CONTACTS SECTION -->
+<section id="contacts" class="cont-sec contacts-sec">
 
-</div><!-- /#skills -->
+    <div class="sec-title">
 
+        <div class="container">
 
+            <h2>@lang('index.contact-heading')</h2>
 
-<div id="social" class="cream-container parallax" data-speed="24" data-offsetY="-150">
+        </div>
 
-    <div class="icon-container"><div><span class="glyphicons heart"><i></i></span></div></div>
+    </div>
 
-    <div class="container wrap">
+    <!-- BEGIN CONTACTS -->
+    <div class="contacts">
+        <div id="map" class="map"></div>
+        <div class="inner">
+            @lang('index.personal-adr'): <span class="adr">
+                        <span class="country-name">@lang('index.personal-adr-val-3')</span>,
+                        <span class="locality">@lang('index.personal-adr-val-2')</span>,
+                        <span class="street-address">@lang('index.personal-adr-val-1')</span>
+                    </span><br>
+            Email: <span class="email">mail@yoursite.com</span><br>
+            Phone: <span class="tel"> 123-45-67</span><br>
+        </div>
+    </div>
+    <!-- END CONTACTS -->
 
-        <div class="row">
+    <div class="cont-b-3">
 
-            <div class="col dimfull text-center">
+        <div class="container">
 
-                <h2>@lang('index.social-heading')</h2>
+            <div class="cols">
 
-                <p class="intro">
-                    @lang('index.social-desc-1')
-                    <a class="smooth-scroll" href="#personalinfo">@lang('index.social-desc-personal')</a>
-                    @lang('index.social-desc-2')
-                    <a class="smooth-scroll" href="#contact">@lang('index.social-desc-contact')</a>
-                    @lang('index.social-desc-3')
-                </p>
+                <div class="col col-1-2">
 
-                <div class="more">
-                    <a href="https://plus.google.com/+LukasPradel/" class="btn transparent"><span class="icomoon icomoon-googleplus3"></span><span class="icomoon-label"> Google Plus</span></a>
-                    <a href="skype:bahama-teddy?userinfo" class="btn transparent"><span class="icomoon icomoon-skype"></span><span class="icomoon-label"> Skype</span></a>
-                    <a href="http://steamcommunity.com/id/boonzsteam/" class="btn transparent"><span class="icomoon icomoon-steam2"></span><span class="icomoon-label"> Steam</span></a>
-                    <a href="https://www.xing.com/profile/Lukas_Pradel/" class="btn transparent"><span class="icomoon icomoon-xing"></span><span class="icomoon-label"> XING</span></a>
-                    <a href="https://www.linkedin.com/in/lukaspradel" class="btn transparent"><span class="icomoon icomoon-linkedin"></span><span class="icomoon-label"> LinkedIn</span></a>
-                    <a href="https://github.com/lpradel/" class="btn transparent"><span class="icomoon icomoon-github3"></span><span class="icomoon-label"> github</span></a>
+                    <h3>@lang('index.contact-heading')</h3>
+
+                    <!-- BEGIN CONTACT FORM -->
+                    <form class="feedback-form" method="post" action="send.php">
+                        <div class="inp-b">
+                            <input type="text" placeholder="Name" name="name" class="required">
+                        </div>
+                        <div class="inp-b">
+                            <input type="text" placeholder="Mail" name="email" class="required">
+                        </div>
+                        <div class="inp-b">
+                            <textarea placeholder="Message" name="message" class="required"></textarea>
+                        </div>
+                        <div class="inp-b">
+                            <input type="submit" value="Send" class="btn">
+                        </div>
+                    </form>
+                    <!-- END CONTACT FORM -->
+
                 </div>
 
+                <div class="col col-1-2">
 
-            </div><!-- /.col -->
+                    <h3>Tweets</h3>
 
-        </div><!-- /.row  -->
+                    <!-- BEGIN TWEETS -->
+                    <div class="tweet">
 
-    </div><!-- /.container -->
+                        <a class="twitter-timeline"  href="https://twitter.com/lukaspradel" data-widget-id="345502025829724160" data-theme="dark" data-link-color="#72B5E5" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3">Tweets by @lukaspradel</a>
 
-</div><!-- /#social -->
+                    </div>
+                    <!-- END TWEETS -->
 
+                </div>
 
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- END CONTACTS SECTION -->
 
 
 <div id="contact" class="coffee-container parallax" data-speed="32" data-offsetY="-150">

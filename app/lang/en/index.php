@@ -49,10 +49,9 @@ return array(
 
     // Education - MSc
     'edu-heading'           => 'Education',
-    'edu-msc-period'        => 'from 2012 to present day',
-    'edu-msc-school'        => 'Technische Universit&auml;t Dortmund',
-    'edu-msc-city'          => 'Dortmund, Germany',
-    'edu-msc-title'         => 'Master of Science',
+    'edu-msc-period'        => '2012 - present day',
+    'edu-msc-school'        => 'TU Dortmund',
+    'edu-msc-title'         => 'MSc',
     'edu-msc-desc'          => 'I\'m currently in my second year of Master\'s studies. I intend to wrap it up in spring 2015.
                                 My Master\'s thesis will probably be about efficient algorithms for clustering problems.',
     'edu-msc-notable'       => 'Notable courses:',
@@ -65,10 +64,9 @@ return array(
     'edu-msc-project-1'     => 'Project: Implicit maximum weight matchings',
 
     // Education - BSc
-    'edu-bsc-period'        => 'from 2009 to 2012',
-    'edu-bsc-school'        => 'Technische Universit&auml;t Dortmund',
-    'edu-bsc-city'          => 'Dortmund, Germany',
-    'edu-bsc-title'         => 'Bachelor of Science',
+    'edu-bsc-period'        => '2009 - 2012',
+    'edu-bsc-school'        => 'TU Dortmund',
+    'edu-bsc-title'         => 'BSc',
     'edu-bsc-desc'          => 'I finished my Bachelor\'s degree in computer science in the standard period of study with a minor in economic sciences.
                                 The focus of my studies were theoretical computer science and the design and analysis of efficient algorithms.
                                 In my bachelor thesis I developed &quot;Symbolic algorithms for weighted matchings&quot;.',
@@ -97,8 +95,8 @@ return array(
     'emp-due-web'           => 'University website',
 
     // Employment - Student assistant TUD
-    'emp-tud-stud-period'   => 'from 2010 to present day',
-    'emp-tud-stud-company'  => 'Technische Universit&auml;t Dortmund',
+    'emp-tud-stud-period'   => '2010 - present day',
+    'emp-tud-stud-company'  => 'TU Dortmund',
     'emp-tud-stud-position' => 'Student assistant',
     'emp-tud-stud-desc'     => 'At the Efficient Algorithms and Complexity Theory chair I help with preparing lecture slides, writing research papers and often literature search.
                                 More often than not I implement algorithms and compare them to previous work. I also code tools when needed and maintain the website.
@@ -106,7 +104,7 @@ return array(
     'emp-tud-stud-web'      => 'Chair website',
 
     // Employment - Student employee adesso AG
-    'emp-ad-period'         => 'from 2012 to present day',
+    'emp-ad-period'         => '2012 - present day',
     'emp-ad-company'        => 'adesso AG',
     'emp-ad-position'       => 'Student employee',
     'emp-ad-desc'           => 'Our team develops and maintains an online lottery platform. The software involved has become very complex
