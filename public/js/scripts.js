@@ -92,55 +92,6 @@
         })
     })
 
-    // MAP SETUP
-    // Create an array of styles.
-    var stylesArray = [
-        {
-            stylers: [
-                { saturation: -100 }
-                
-            ]
-        },{
-            featureType: 'road',
-            elementType: 'labels',
-            stylers: [
-                { visibility: 'off' }
-            ]
-        }
-    ],
-        
-    // Latitude and longitude for your location goes here
-    lat = 51.494450,
-    lng = 7.411958,
-
-    // Create a new StyledMapType object, passing it the array of styles,
-    // as well as the name to be displayed on the map type control.
-    customMap = new google.maps.StyledMapType(stylesArray,
-    {name: 'Styled Map'}),
-
-    // Create a map object, and include the MapTypeId to add
-    // to the map type control.
-    mapOptions = {
-        zoom: 10,
-        center: new google.maps.LatLng( lat, lng ),
-        scrollwheel: false,
-        mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP]
-        }
-    },
-    map = new google.maps.Map(document.getElementById('map'), mapOptions),
-    myLatlng = new google.maps.LatLng( lat, lng ),
-
-    marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        icon: "/images/marker.png"
-    });
-        
-    // Associate the styled map with the MapTypeId and set it to display.
-    map.mapTypes.set('map_style', customMap);
-    map.setMapTypeId('map_style');
-
     // Form validation
     $(".feedback-form").validate({
         errorClass: "inp-error",
@@ -174,12 +125,6 @@
             });
         }
     });
-
-    // Tweets custom styling
-    var options = {
-        "url": "assets/plugins/tweets-customize/tweets.css"
-    };
-    CustomizeTwitterWidget(options);
 
 }(jQuery));
 

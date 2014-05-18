@@ -88,8 +88,8 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
 
 .main{position:relative;overflow:hidden;z-index:10}
 
-.nav{position:fixed;left:0;top:0;width:100%;background:#333;z-index:100}
-    .nav .container{height:60px;padding:0}
+.nav{position:fixed;left:0;top:0;width:100%;background:#333;z-index:100;}
+    .nav .container{height:60px;padding:0;}
     .nav .nav-trigger{display:none;margin:0 auto}
     .nav ul{padding:0;font:1em/58px 'quicksandbold';text-transform:uppercase;text-align:center}
     .nav li{display:inline-block;padding:0 15px}
@@ -206,8 +206,18 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
 
 .contacts{position:relative}
     .contacts .map{height:480px}
-    .contacts .inner{position:absolute;left:0;bottom:0;width:100%;padding:25px 0;background:rgba(114,181,229,0.9);-pie-background:rgba(114,181,229,0.9);color:#fff;text-align:center;line-height:1.6;text-transform:uppercase}
+    .contacts .inner{position:absolute;left:0;bottom:0;width:100%;background:rgba(96,164,224,1);-pie-background:rgba(96,164,224,1);color:#fff;text-align:center;line-height:1.6;}
     .contacts .inner span{font:1em 'quicksandbold'}
+    .contacts .inner a{color:#fff;}
+    .contacts .inner a:hover{color:#333333;}
+dt{font-weight:bold;}
+dl dd{margin-bottom:15px!important;}
+.column{float:left;}
+.dim1half{width:40%;}
+.text-right{text-align:right;}
+.text-left{text-align:left;}
+.pad-right{padding-right:20px;}
+.pad-left{padding-left:15px;}
 
 .message{display:none;margin:0 0 20px;padding:10px 20px;-webkit-border-radius:20px;border-radius:20px;font:0.9em/1.4 'quicksandregular'}
 .message-ok{background:#58A384}

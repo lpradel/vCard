@@ -30,7 +30,8 @@ return array(
     'aboutme-main-5'        => 'and at',
     'aboutme-main-ad'       => 'adesso AG',
     'aboutme-main-6'        => 'as a student employee.',
-    'aboutme-main-7'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
+    'aboutme-main-7'        => 'If you are interested in my programming work feel free to take a look at my',
+    'aboutme-main-8'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
 
     // Personal information
     'personal-heading'      => 'Personal Information',
@@ -144,7 +145,7 @@ return array(
     'social-desc-3'         => 'below. I\'m looking forward to hearing from you!',
 
     // Contact
-    'contact-heading'       => 'Contact me',
+    'contact-heading'       => 'Contact',
     'contact-desc'          => '',
     'contact-name'          => 'Name',
     'contact-name-ph'       => 'Your name',

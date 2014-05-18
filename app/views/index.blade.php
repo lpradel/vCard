@@ -6,34 +6,43 @@ Lukas Pradel
 
 @section('language-links')
 @if (App::getLocale() == "en")
+<!--
 <a href="/?lang=de" id="langtrigger">
-    <span class="pull-right icon lang">DE</span>
+    DE
 </a>
+-->
+<div id="polyglotLanguageSwitcher">
+    <form action="#">
+        <select id="polyglot-language-options">
+            <option id="en" value="en" selected>English</option>
+            <option id="de" value="de">German</option>
+        </select>
+    </form>
+</div>
 @else
+<!--
 <a href="/?lang=en" id="langtrigger">
     <span class="pull-right icon lang">EN</span>
 </a>
+-->
+<div id="polyglotLanguageSwitcher">
+    <form action="#">
+        <select id="polyglot-language-options">
+            <option id="en" value="en">English</option>
+            <option id="de" value="de" selected>German</option>
+        </select>
+    </form>
+</div>
 @endif
 @stop
 
-@section('sidebar-nav')
-<nav>
-    <div id="sidr" class="hidden">
-        <h3>Navigation</h3><a href="#" class="navclose"><span class="glyphicons remove_2"><i></i></span></a>
-        <ul>
-            <li><a href="#home" ><span class="glyphicons home"><i></i></span>@lang('index.menu-home')</a></li>
-            <li><a href="#about" ><span class="glyphicons user"><i></i></span>@lang('index.menu-aboutme')</a></li>
-            <li><a href="#personalinfo"><span class="glyphicons nameplate"><i></i></span>@lang('index.menu-personal')</a></li>
-            <li><a href="#education"><span class="glyphicons certificate"><i></i></span>@lang('index.menu-edu')</a></li>
-            <li><a href="#employment"><span class="glyphicons share_alt"><i></i></span>@lang('index.menu-emp')</a></li>
-            <li><a href="#code"><span class="glyphicons briefcase"><i></i></span>@lang('index.menu-code')</a></li>
-            <li><a href="#skills"><span class="glyphicons cogwheels"><i></i></span>@lang('index.menu-skills')</a></li>
-            <li><a href="#social"><span class="glyphicons heart"><i></i></span>@lang('index.menu-social')</a></li>
-            <li><a href="#contact"><span class="glyphicons envelope"><i></i></span>@lang('index.menu-contact')</a></li>
-            <li><a href="#download"><span class="glyphicons paperclip"><i></i></span>@lang('index.menu-cv')</a></li>
-        </ul>
-    </div>
-</nav>
+@section('menu')
+<ul>
+    <li class="current"><a href="#about">About me</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contacts">Contact</a></li>
+</ul>
 @stop
 
 @section('main')
@@ -57,8 +66,9 @@ Lukas Pradel
                     <li><a href="https://www.youtube.com/user/LukasPradel" class="item-10"></a></li>
                 </ul>
                 <div class="center">
-                    <a href="#contacts" class="btn-2 btn-scroll">Hire me</a>
-                    <a href="" class="btn-2">Download vcard</a>
+                    <a href="#contacts" class="btn-2 btn-scroll">Contact me</a>
+                    <a href="/public/download/cv.pdf" class="btn-2">Download CV (English)</a>
+                    <a href="/public/download/cv.pdf" class="btn-2">Download CV (German)</a>
                 </div>
 
             </div>
@@ -88,8 +98,12 @@ Lukas Pradel
                         @lang('index.aboutme-main-6')
                         <br/>
                         <br/>
-                        @lang('index.aboutme-main-7')
+                        @lang('index.aboutme-main-8')
                         <a href="http://dotabuff.com/players/91417049">Dota 2</a>.
+                        <br/>
+                        <br/>
+                        @lang('index.aboutme-main-7')
+                        <a href="https://github.com/lpradel/">github</a>.
                     </p>
                 </div>
             </div>
@@ -188,7 +202,7 @@ Lukas Pradel
 
     <hr>
 
-    <div class="container">
+    <div class="container" id="skills">
 
         <div class="cols">
 
@@ -395,7 +409,8 @@ Lukas Pradel
 
     <!-- BEGIN CONTACTS -->
     <div class="contacts">
-        <div id="map" class="map"></div>
+        <!--<div id="map" class="map"></div>-->
+        <!--
         <div class="inner">
             @lang('index.personal-adr'): <span class="adr">
                         <span class="country-name">@lang('index.personal-adr-val-3')</span>,
@@ -405,6 +420,7 @@ Lukas Pradel
             Email: <span class="email">mail@yoursite.com</span><br>
             Phone: <span class="tel"> 123-45-67</span><br>
         </div>
+        -->
     </div>
     <!-- END CONTACTS -->
 
@@ -416,7 +432,7 @@ Lukas Pradel
 
                 <div class="col col-1-2">
 
-                    <h3>@lang('index.contact-heading')</h3>
+                    <h3 style="color: #72B5E5;">Send me a message</h3>
 
                     <!-- BEGIN CONTACT FORM -->
                     <form class="feedback-form" method="post" action="send.php">
@@ -439,13 +455,37 @@ Lukas Pradel
 
                 <div class="col col-1-2">
 
-                    <h3>Tweets</h3>
+                    <h3 style="color: #72B5E5; text-align: center;">@lang('index.personal-heading')</h3>
 
                     <!-- BEGIN TWEETS -->
+                    <!--
                     <div class="tweet">
 
                         <a class="twitter-timeline"  href="https://twitter.com/lukaspradel" data-widget-id="345502025829724160" data-theme="dark" data-link-color="#72B5E5" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3">Tweets by @lukaspradel</a>
 
+                    </div>
+                    -->
+                    <div class="personal">
+                        <dl class="row">
+                            <dt class="column dim1half text-right padright">@lang('index.personal-dob')</dt>
+                            <dd class="column dim1half text-left padleft">@lang('index.personal-dob-val')</dd>
+
+                            <dt class="column dim1half text-right padright">@lang('index.personal-adr')</dt>
+                            <dd class="column dim1half text-left padleft">
+                                @lang('index.personal-adr-val-1')<br/>
+                                @lang('index.personal-adr-val-2')<br/>
+                                @lang('index.personal-adr-val-3')
+                            </dd>
+
+                            <dt class="column dim1half text-right padright">@lang('index.personal-email')</dt>
+                            <dd class="column dim1half text-left padleft"><a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501h-OD9C75BfXnkoGnpom4HA\75\75\46c\0754IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">l...</a>@googlemail.com</dd>
+
+                            <dt class="column dim1half text-right padright">@lang('index.personal-phone')</dt>
+                            <dd class="column dim1half text-left padleft">@lang('index.personal-phone-val')</dd>
+
+                            <dt class="column dim1half text-right padright">@lang('index.personal-web')</dt>
+                            <dd class="column dim1half text-left padleft"><a href="http://lukaspradel.com">@lang('index.personal-web-val')</a></dd>
+                        </dl>
                     </div>
                     <!-- END TWEETS -->
 
@@ -459,91 +499,4 @@ Lukas Pradel
 
 </section>
 <!-- END CONTACTS SECTION -->
-
-
-<div id="contact" class="coffee-container parallax" data-speed="32" data-offsetY="-150">
-
-    <div class="icon-container"><div><span class="glyphicons envelope"><i></i></span></div></div>
-
-    <div class="container wrap">
-
-        <div class="row">
-
-            <div class="col dimfull text-center">
-
-                <h2>@lang('index.contact-heading')</h2>
-
-                <p class="intro">
-                    @lang('index.contact-desc')
-                </p>
-
-                <form id="contact-form" method="post" action="#contact-form" class="text-left" data-form-action="contact">
-
-                    <div class="email-confirmation hidden"><span class="glyphicons ok_2"><i></i></span> @lang('index.contact-success')</div>
-                    <div class="email-error hidden"><span class="glyphicons remove_2"><i></i></span> @lang('index.contact-error')</div>
-
-                    <p>
-                        <label for="form-name">@lang('index.contact-name')</label>
-                        <input type="text" class="mandatory" placeholder="@lang('index.contact-name-ph')" id="form-name" name="form-name" value="">
-                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> @lang('index.contact-name-error')</span>
-                    </p>
-                    <p>
-                        <label for="form-email">@lang('index.contact-email')</label>
-                        <input type="text" class="mandatory" placeholder="@lang('index.contact-email-ph')" id="form-email" name="form-email" value="">
-                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> @lang('index.contact-email-error')</span>
-                    </p>
-                    <p>
-                        <label for="form-subject">@lang('index.contact-subject')</label>
-                        <input type="text" placeholder="@lang('index.contact-subject-ph')" id="form-subject" name="form-subject" value="">
-                    </p>
-                    <p>
-                        <label for="form-message">@lang('index.contact-msg')</label>
-                        <textarea rows="6" class="mandatory" placeholder="@lang('index.contact-msg-ph')" id="form-message" name="form-message" ></textarea>
-                        <span class="error-message hidden"><span class="glyphicons ban"><i></i></span> @lang('index.contact-msg-error')</span>
-                    </p>
-                    <span class="clear"></span>
-                    <p>
-                        <button type="submit" class="btn btn-primary" name="form-submit">@lang('index.contact-submit')</button>
-                    </p>
-
-                </form>
-
-
-            </div><!-- /.col -->
-
-        </div><!-- /.row  -->
-
-    </div><!-- /.container -->
-
-</div><!-- /#contact -->
-
-
-
-
-<div id="download" class="cream-container parallax" data-speed="18" data-offsetY="-150">
-
-    <div class="icon-container"><div><span class="glyphicons paperclip"><i></i></span></div></div>
-
-    <div class="container wrap">
-
-        <div class="row">
-
-            <div class="col dimfull text-center">
-
-                <h2>@lang('index.cv-heading')</h2>
-
-                <p class="intro">
-                    @lang('index.cv-desc')
-                </p>
-
-                <a href="/public/download/cv.pdf" class="btn">Download</a>
-
-
-            </div><!-- /.col -->
-
-        </div><!-- /.row  -->
-
-    </div><!-- /.container -->
-
-</div><!-- /#download -->
 @stop

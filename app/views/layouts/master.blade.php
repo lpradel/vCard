@@ -43,7 +43,8 @@ if (App::getLocale() == "en") {
 
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" media="all">
     <link rel="stylesheet" type="text/css" href="/css/main.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" media="handheld">
+    <link rel="stylesheet" type="text/css" href="/css/polyglot-language-switcher.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" media="all">
 
     <!-- JS
     ================================================== -->
@@ -62,21 +63,11 @@ if (App::getLocale() == "en") {
 
     <!-- BEGIN NAV -->
     <nav class="nav">
-
         <div class="container">
-
             <div class="nav-trigger"></div>
-
-            <ul>
-                <li class="current"><a href="#about">About me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-
+            @section('menu')
+            @show
         </div>
-
     </nav>
     <!-- END NAV -->
 
@@ -85,6 +76,23 @@ if (App::getLocale() == "en") {
     <div class="main">
         @section('main')
         @show
+
+        <footer>
+            <div class="contacts">
+                <div class="inner">
+                    &copy; 2014 <em>Lukas Pradel</em> |
+                    <a href="@lang('routes.legal')">
+                        @lang('index.menu-legal')
+                    </a> |
+                    Built with <a href="http://laravel.com/">Laravel/4.1.25</a> |
+                    Hosted at <a href="http://digitalocean.com/">DigitalOcean</a> |
+                    Powered by <a href="http://nginx.org/">nginx/1.6.0</a>
+
+                    @section('language-links')
+                    @show
+                </div>
+            </div>
+        </footer>
     </div>
     <!-- END MAIN CONTAINER -->
     </main>
@@ -95,6 +103,35 @@ if (App::getLocale() == "en") {
 ================================================== -->
 
 <script src="/js/jquery-1.10.1.min.js"></script>
+<script src="/js/jquery.polyglot.language.switcher.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+            effect: 'fade',
+            testMode: true,
+            websiteType: 'dynamic',
+            paramName: 'lang',
+                onChange: function(evt){
+                alert("The selected language is: "+evt.selectedItem);
+            }
+//                ,afterLoad: function(evt){
+//                    alert("The selected language has been loaded");
+//                },
+//                beforeOpen: function(evt){
+//                    alert("before open");
+//                },
+//                afterOpen: function(evt){
+//                    alert("after open");
+//                },
+//                beforeClose: function(evt){
+//                    alert("before close");
+//                },
+//                afterClose: function(evt){
+//                    alert("after close");
+//                }
+        });
+    });
+</script>
 
 <script src="/plugins/ope-page-nav/jquery-ui-1.9.2.custom.min.js"></script>
 <script src="/plugins/ope-page-nav/jquery.scrollTo.js"></script>
@@ -106,21 +143,7 @@ if (App::getLocale() == "en") {
 
 <script src="/plugins/cycle2/jquery.cycle2.min.js"></script>
 
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
 <script src="/plugins/validate/jquery.validate.js"></script>
-
-<script>
-    !function(d,s,id){
-        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-        if(!d.getElementById(id)){
-            js=d.createElement(s);js.id=id;
-            js.src=p+"://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js,fjs);
-        }
-    }(document,"script","twitter-wjs");
-</script>
-<script src="/plugins/tweets-customize/customize-twitter-1.1.min.js"></script>
 
 <script src="/js/scripts.js"></script>
 
