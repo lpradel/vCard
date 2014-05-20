@@ -98,12 +98,14 @@ Lukas Pradel
                         @lang('index.aboutme-main-6')
                         <br/>
                         <br/>
-                        @lang('index.aboutme-main-8')
+                        @lang('index.aboutme-main-9')
                         <a href="http://dotabuff.com/players/91417049">Dota 2</a>.
                         <br/>
                         <br/>
                         @lang('index.aboutme-main-7')
                         <a href="https://github.com/lpradel/">github</a>.
+                        @lang('index.aboutme-main-8')
+                        <a href="http://osrc.dfm.io/lpradel/">Open Source Report Card</a>.
                     </p>
                 </div>
             </div>

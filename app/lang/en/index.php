@@ -23,7 +23,7 @@ return array(
     'aboutme-heading'       => 'About me',
     'aboutme-main-1'        => 'I\'m currently pursuing a master\'s degree in computer science at',
     'aboutme-main-tud'      => 'Technische Universit&auml;t Dortmund',
-    'aboutme-main-2'        => 'in Germany.',
+    'aboutme-main-2'        => '(Germany).',
     'aboutme-main-3'        => 'I work at the',
     'aboutme-main-ls2'      => 'Efficient Algorithms and Complexity Theory chair',
     'aboutme-main-4'        => 'as a student assistant',
@@ -31,7 +31,8 @@ return array(
     'aboutme-main-ad'       => 'adesso AG',
     'aboutme-main-6'        => 'as a student employee.',
     'aboutme-main-7'        => 'If you are interested in my programming work feel free to take a look at my',
-    'aboutme-main-8'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
+    'aboutme-main-8'        => 'You might also be interested in my ',
+    'aboutme-main-9'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
 
     // Personal information
     'personal-heading'      => 'Personal Information',

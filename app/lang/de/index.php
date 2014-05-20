@@ -30,7 +30,9 @@ return array(
     'aboutme-main-5'        => 'bei der',
     'aboutme-main-ad'       => 'adesso AG.',
     'aboutme-main-6'        => '',
-    'aboutme-main-7'        => 'In meiner Freizeit treibe ich gerne Lauf- und Kraftsport, lese Science-Fiction und Fantasy oder spiele',
+    'aboutme-main-7'        => 'Meine Programmierprojekte und Open Source Beitr&auml;ge sind auf',
+    'aboutme-main-8'        => 'Interessant ist in dieser Hinsicht vielleicht auch meine ',
+    'aboutme-main-9'        => 'In meiner Freizeit treibe ich gerne Lauf- und Kraftsport, lese Science-Fiction und Fantasy oder spiele',
 
     // Persönliche Informationen
     'personal-heading'      => 'Pers&ouml;nliche Informationen',

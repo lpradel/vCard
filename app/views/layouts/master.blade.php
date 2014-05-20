@@ -108,27 +108,12 @@ if (App::getLocale() == "en") {
     $(document).ready(function() {
         $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
             effect: 'fade',
-            testMode: true,
+            testMode: false,
             websiteType: 'dynamic',
             paramName: 'lang',
                 onChange: function(evt){
-                alert("The selected language is: "+evt.selectedItem);
+                return;
             }
-//                ,afterLoad: function(evt){
-//                    alert("The selected language has been loaded");
-//                },
-//                beforeOpen: function(evt){
-//                    alert("before open");
-//                },
-//                afterOpen: function(evt){
-//                    alert("after open");
-//                },
-//                beforeClose: function(evt){
-//                    alert("before close");
-//                },
-//                afterClose: function(evt){
-//                    alert("after close");
-//                }
         });
     });
 </script>
