@@ -9,6 +9,7 @@ return array(
     // Menu
     'menu-home'             => 'Home',
     'menu-aboutme'          => 'About me',
+    'menu-cv'               => 'Resume',
     'menu-personal'         => 'Personal Information',
     'menu-edu'              => 'Education',
     'menu-emp'              => 'Employment',
@@ -33,6 +34,8 @@ return array(
     'aboutme-main-7'        => 'If you are interested in my programming work feel free to take a look at my',
     'aboutme-main-8'        => 'You might also be interested in my ',
     'aboutme-main-9'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
+    'aboutme-cv-en'         => 'Download CV (English)',
+    'aboutme-cv-de'         => 'Download CV (German)',
 
     // Personal information
     'personal-heading'      => 'Personal Information',
@@ -147,7 +150,7 @@ return array(
 
     // Contact
     'contact-heading'       => 'Contact',
-    'contact-desc'          => '',
+    'contact-desc'          => 'Send me a message',
     'contact-name'          => 'Name',
     'contact-name-ph'       => 'Your name',
     'contact-name-error'    => 'Please enter your name.',

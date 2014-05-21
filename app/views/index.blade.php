@@ -38,10 +38,10 @@ Lukas Pradel
 
 @section('menu')
 <ul>
-    <li class="current"><a href="#about">About me</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contacts">Contact</a></li>
+    <li class="current"><a href="#about">@lang('index.menu-aboutme')</a></li>
+    <li><a href="#resume">@lang('index.menu-cv')</a></li>
+    <li><a href="#skills">@lang('index.menu-skills')</a></li>
+    <li><a href="#contacts">@lang('index.menu-contact')</a></li>
 </ul>
 @stop
 
@@ -66,9 +66,8 @@ Lukas Pradel
                     <li><a href="https://www.youtube.com/user/LukasPradel" class="item-10"></a></li>
                 </ul>
                 <div class="center">
-                    <a href="#contacts" class="btn-2 btn-scroll">Contact me</a>
-                    <a href="/public/download/cv.pdf" class="btn-2">Download CV (English)</a>
-                    <a href="/public/download/cv.pdf" class="btn-2">Download CV (German)</a>
+                    <a href="/public/download/cv.pdf" class="btn-2">@lang('index.aboutme-cv-en')</a>
+                    <a href="/public/download/cv.pdf" class="btn-2">@lang('index.aboutme-cv-de')</a>
                 </div>
 
             </div>
@@ -124,7 +123,7 @@ Lukas Pradel
 
         <div class="container">
 
-            <h2>Resume</h2>
+            <h2>@lang('index.menu-cv')</h2>
 
         </div>
 
@@ -434,7 +433,7 @@ Lukas Pradel
 
                 <div class="col col-1-2">
 
-                    <h3 style="color: #72B5E5;">Send me a message</h3>
+                    <h3 style="color: #72B5E5;">@lang('index.contact-desc')</h3>
 
                     <!-- BEGIN CONTACT FORM -->
                     <form class="feedback-form" method="post" action="send.php">
