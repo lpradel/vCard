@@ -6,11 +6,6 @@ Lukas Pradel
 
 @section('language-links')
 @if (App::getLocale() == "en")
-<!--
-<a href="/?lang=de" id="langtrigger">
-    DE
-</a>
--->
 <div id="polyglotLanguageSwitcher">
     <form action="#">
         <select id="polyglot-language-options">
@@ -20,11 +15,6 @@ Lukas Pradel
     </form>
 </div>
 @else
-<!--
-<a href="/?lang=en" id="langtrigger">
-    <span class="pull-right icon lang">EN</span>
-</a>
--->
 <div id="polyglotLanguageSwitcher">
     <form action="#">
         <select id="polyglot-language-options">
