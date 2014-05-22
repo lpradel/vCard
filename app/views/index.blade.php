@@ -436,18 +436,21 @@ Lukas Pradel
                     <h3 style="color: #72B5E5;">@lang('index.contact-desc')</h3>
 
                     <!-- BEGIN CONTACT FORM -->
-                    <form class="feedback-form" method="post" action="send.php">
+                    <form class="feedback-form" method="post" action="contact">
                         <div class="inp-b">
-                            <input type="text" placeholder="Name" name="name" class="required">
+                            <input type="text" placeholder="@lang('index.contact-name')" name="form-name" class="required">
                         </div>
                         <div class="inp-b">
-                            <input type="text" placeholder="Mail" name="email" class="required">
+                            <input type="text" placeholder="@lang('index.contact-email')" name="form-email" class="required">
                         </div>
                         <div class="inp-b">
-                            <textarea placeholder="Message" name="message" class="required"></textarea>
+                            <input type="text" placeholder="@lang('index.contact-subject')" name="form-subject">
                         </div>
                         <div class="inp-b">
-                            <input type="submit" value="Send" class="btn">
+                            <textarea placeholder="@lang('index.contact-msg')" name="form-message" class="required"></textarea>
+                        </div>
+                        <div class="inp-b">
+                            <input type="submit" value="@lang('index.contact-submit')" class="btn">
                         </div>
                     </form>
                     <!-- END CONTACT FORM -->

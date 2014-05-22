@@ -162,7 +162,7 @@ return array(
     'contact-msg'           => 'Message',
     'contact-msg-ph'        => 'Your message',
     'contact-msg-error'     => 'Please enter your message.',
-    'contact-submit'        => 'Submit',
+    'contact-submit'        => 'Send',
     'contact-success'       => 'Your message was sent.',
     'contact-error'         => 'There was an error submitting your message. Try sending me an email instead!',
 

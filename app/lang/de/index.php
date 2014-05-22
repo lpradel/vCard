@@ -159,7 +159,7 @@ return array(
     'contact-email'         => 'Email',
     'contact-email-ph'      => 'Ihre Email-Adresse',
     'contact-email-error'   => 'Bitte geben Sie eine g&uuml;ltige Email-Adresse ein.',
-    'contact-subject'       => 'Betreffe',
+    'contact-subject'       => 'Betreff',
     'contact-subject-ph'    => 'Ihr Betreff',
     'contact-msg'           => 'Nachricht',
     'contact-msg-ph'        => 'Ihre Nachricht',

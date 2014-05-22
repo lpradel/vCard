@@ -112,7 +112,7 @@
             dataString = $(".feedback-form").serialize();
             $.ajax({
                 type: "POST",
-                url: "send.php",
+                url: "contact",
                 data: dataString,
                 success: function(data) {
                     $('.feedback-form .loading').remove();
