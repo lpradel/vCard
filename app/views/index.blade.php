@@ -461,14 +461,7 @@ Lukas Pradel
 
                     <h3 style="color: #72B5E5; text-align: center;">@lang('index.personal-heading')</h3>
 
-                    <!-- BEGIN TWEETS -->
-                    <!--
-                    <div class="tweet">
-
-                        <a class="twitter-timeline"  href="https://twitter.com/lukaspradel" data-widget-id="345502025829724160" data-theme="dark" data-link-color="#72B5E5" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3">Tweets by @lukaspradel</a>
-
-                    </div>
-                    -->
+                    <!-- BEGIN PERSONAL INFO -->
                     <div class="personal">
                         <dl class="row">
                             <dt class="column dim1half text-right padright">@lang('index.personal-dob')</dt>
@@ -491,7 +484,7 @@ Lukas Pradel
                             <dd class="column dim1half text-left padleft"><a href="http://lukaspradel.com">@lang('index.personal-web-val')</a></dd>
                         </dl>
                     </div>
-                    <!-- END TWEETS -->
+                    <!-- END PERSONAL INFO -->
 
                 </div>
 
