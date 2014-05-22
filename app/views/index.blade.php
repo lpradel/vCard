@@ -408,23 +408,6 @@ Lukas Pradel
 
     </div>
 
-    <!-- BEGIN CONTACTS -->
-    <div class="contacts">
-        <!--<div id="map" class="map"></div>-->
-        <!--
-        <div class="inner">
-            @lang('index.personal-adr'): <span class="adr">
-                        <span class="country-name">@lang('index.personal-adr-val-3')</span>,
-                        <span class="locality">@lang('index.personal-adr-val-2')</span>,
-                        <span class="street-address">@lang('index.personal-adr-val-1')</span>
-                    </span><br>
-            Email: <span class="email">mail@yoursite.com</span><br>
-            Phone: <span class="tel"> 123-45-67</span><br>
-        </div>
-        -->
-    </div>
-    <!-- END CONTACTS -->
-
     <div class="cont-b-3">
 
         <div class="container">
