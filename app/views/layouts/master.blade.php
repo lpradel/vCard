@@ -2,8 +2,10 @@
 
 if (App::getLocale() == "en") {
     $lang = "en-US";
+    $lang_plain = "en";
 } else {
     $lang = "de-DE";
+    $lang_plain = "de";
 }
 ?>
 
@@ -81,7 +83,7 @@ if (App::getLocale() == "en") {
             <div class="contacts">
                 <div class="inner">
                     &copy; 2014 <em>Lukas Pradel</em> |
-                    <a href="@lang('routes.legal')">
+                    <a href="@lang('routes.legal')?lang=<?=$lang_plain?>">
                         @lang('index.menu-legal')
                     </a> |
                     Built with <a href="http://laravel.com/">Laravel/4.1.25</a> |

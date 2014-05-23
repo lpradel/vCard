@@ -18,8 +18,8 @@ Lukas Pradel
 <div id="polyglotLanguageSwitcher">
     <form action="#">
         <select id="polyglot-language-options">
-            <option id="en" value="en">English</option>
-            <option id="de" value="de" selected>German</option>
+            <option id="en" value="en">Englisch</option>
+            <option id="de" value="de" selected>Deutsch</option>
         </select>
     </form>
 </div>

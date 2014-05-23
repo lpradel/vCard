@@ -8,7 +8,7 @@ return array(
     'legal-disclosure'          => 'Impressum',
 
     // Legal Disclosure
-    'information-tmg5'          => 'Angaben gem&auml;&szlig; &sect; 5 TMG',
+    'information-tmg5'          => 'Angaben gem&auml;&szlig;',
     'information-name'          => 'Lukas Pradel',
     'information-adr'           => 'Ostendstra&szlig;e 10d',
     'information-adr2'          => '59427 Unna',
