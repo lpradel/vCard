@@ -128,8 +128,6 @@ if (App::getLocale() == "en") {
 
 <script src="/plugins/quicksand/jquery.quicksand.js"></script>
 
-<script src="/plugins/cycle2/jquery.cycle2.min.js"></script>
-
 <script src="/plugins/validate/jquery.validate.js"></script>
 
 <script src="/js/scripts.js"></script>
