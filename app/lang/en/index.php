@@ -9,6 +9,7 @@ return array(
     // Menu
     'menu-home'             => 'Home',
     'menu-aboutme'          => 'About me',
+    'menu-cv'               => 'Resume',
     'menu-personal'         => 'Personal Information',
     'menu-edu'              => 'Education',
     'menu-emp'              => 'Employment',
@@ -23,14 +24,18 @@ return array(
     'aboutme-heading'       => 'About me',
     'aboutme-main-1'        => 'I\'m currently pursuing a master\'s degree in computer science at',
     'aboutme-main-tud'      => 'Technische Universit&auml;t Dortmund',
-    'aboutme-main-2'        => 'in Germany.',
+    'aboutme-main-2'        => '(Germany).',
     'aboutme-main-3'        => 'I work at the',
     'aboutme-main-ls2'      => 'Efficient Algorithms and Complexity Theory chair',
     'aboutme-main-4'        => 'as a student assistant',
     'aboutme-main-5'        => 'and at',
     'aboutme-main-ad'       => 'adesso AG',
     'aboutme-main-6'        => 'as a student employee.',
-    'aboutme-main-7'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
+    'aboutme-main-7'        => 'If you are interested in my programming work feel free to take a look at my',
+    'aboutme-main-8'        => 'You might also be interested in my ',
+    'aboutme-main-9'        => 'I spend my spare time running, working out, reading science fiction and fantasy or giving my best at',
+    'aboutme-cv-en'         => 'Download CV (English)',
+    'aboutme-cv-de'         => 'Download CV (German)',
 
     // Personal information
     'personal-heading'      => 'Personal Information',
@@ -49,10 +54,9 @@ return array(
 
     // Education - MSc
     'edu-heading'           => 'Education',
-    'edu-msc-period'        => 'from 2012 to present day',
-    'edu-msc-school'        => 'Technische Universit&auml;t Dortmund',
-    'edu-msc-city'          => 'Dortmund, Germany',
-    'edu-msc-title'         => 'Master of Science',
+    'edu-msc-period'        => '2012 - present day',
+    'edu-msc-school'        => 'TU Dortmund',
+    'edu-msc-title'         => 'MSc',
     'edu-msc-desc'          => 'I\'m currently in my second year of Master\'s studies. I intend to wrap it up in spring 2015.
                                 My Master\'s thesis will probably be about efficient algorithms for clustering problems.',
     'edu-msc-notable'       => 'Notable courses:',
@@ -65,10 +69,9 @@ return array(
     'edu-msc-project-1'     => 'Project: Implicit maximum weight matchings',
 
     // Education - BSc
-    'edu-bsc-period'        => 'from 2009 to 2012',
-    'edu-bsc-school'        => 'Technische Universit&auml;t Dortmund',
-    'edu-bsc-city'          => 'Dortmund, Germany',
-    'edu-bsc-title'         => 'Bachelor of Science',
+    'edu-bsc-period'        => '2009 - 2012',
+    'edu-bsc-school'        => 'TU Dortmund',
+    'edu-bsc-title'         => 'BSc',
     'edu-bsc-desc'          => 'I finished my Bachelor\'s degree in computer science in the standard period of study with a minor in economic sciences.
                                 The focus of my studies were theoretical computer science and the design and analysis of efficient algorithms.
                                 In my bachelor thesis I developed &quot;Symbolic algorithms for weighted matchings&quot;.',
@@ -97,8 +100,8 @@ return array(
     'emp-due-web'           => 'University website',
 
     // Employment - Student assistant TUD
-    'emp-tud-stud-period'   => 'from 2010 to present day',
-    'emp-tud-stud-company'  => 'Technische Universit&auml;t Dortmund',
+    'emp-tud-stud-period'   => '2010 - present day',
+    'emp-tud-stud-company'  => 'TU Dortmund',
     'emp-tud-stud-position' => 'Student assistant',
     'emp-tud-stud-desc'     => 'At the Efficient Algorithms and Complexity Theory chair I help with preparing lecture slides, writing research papers and often literature search.
                                 More often than not I implement algorithms and compare them to previous work. I also code tools when needed and maintain the website.
@@ -106,7 +109,7 @@ return array(
     'emp-tud-stud-web'      => 'Chair website',
 
     // Employment - Student employee adesso AG
-    'emp-ad-period'         => 'from 2012 to present day',
+    'emp-ad-period'         => '2012 - present day',
     'emp-ad-company'        => 'adesso AG',
     'emp-ad-position'       => 'Student employee',
     'emp-ad-desc'           => 'Our team develops and maintains an online lottery platform. The software involved has become very complex
@@ -146,8 +149,8 @@ return array(
     'social-desc-3'         => 'below. I\'m looking forward to hearing from you!',
 
     // Contact
-    'contact-heading'       => 'Contact me',
-    'contact-desc'          => '',
+    'contact-heading'       => 'Contact',
+    'contact-desc'          => 'Send me a message',
     'contact-name'          => 'Name',
     'contact-name-ph'       => 'Your name',
     'contact-name-error'    => 'Please enter your name.',
@@ -159,7 +162,7 @@ return array(
     'contact-msg'           => 'Message',
     'contact-msg-ph'        => 'Your message',
     'contact-msg-error'     => 'Please enter your message.',
-    'contact-submit'        => 'Submit',
+    'contact-submit'        => 'Send',
     'contact-success'       => 'Your message was sent.',
     'contact-error'         => 'There was an error submitting your message. Try sending me an email instead!',
 

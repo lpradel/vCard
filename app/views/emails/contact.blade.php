@@ -7,7 +7,7 @@
 <h2>Contact Form Message</h2>
 
 <div>
-    A user from your website lukaspradel.TLD has sent you a message via the contact form.
+    A user from your website lukaspradel.com has sent you a message via the contact form.
 </div>
 
 <div>

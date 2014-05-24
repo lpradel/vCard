@@ -6,13 +6,23 @@
 
 @section('language-links')
 @if (App::getLocale() == "en")
-<a href="/impressum?lang=de" id="langtrigger">
-    <span class="pull-right icon lang">DE</span>
-</a>
+<div id="polyglotLanguageSwitcher">
+    <form action="#">
+        <select id="polyglot-language-options">
+            <option id="en" value="en" selected>English</option>
+            <option id="de" value="de">German</option>
+        </select>
+    </form>
+</div>
 @else
-<a href="/legal?lang=en" id="langtrigger">
-    <span class="pull-right icon lang">EN</span>
-</a>
+<div id="polyglotLanguageSwitcher">
+    <form action="#">
+        <select id="polyglot-language-options">
+            <option id="en" value="en">Englisch</option>
+            <option id="de" value="de" selected>Deutsch</option>
+        </select>
+    </form>
+</div>
 @endif
 @stop
 
@@ -29,100 +39,138 @@
 </nav>
 @stop
 
+@section('menu')
+<ul>
+    <li class="current"><a href="#impressum">Impressum</a></li>
+    <li><a href="#disclaimer">Haftungsausschluss</a></li>
+    <li><a href="#privacy">Datenschutzerklärung</a></li>
+</ul>
+@stop
+
 @section('main')
-<div id="home" class="sugar-container">
+<section id="impressum" class="cont-sec about-sec">
 
-    <div class="container wrap">
+    <div class="cont-b">
 
-        <div class="row">
+        <div class="container">
 
-            <div class="col dimfull text-center" id="animation">
-                <h1 id="ccname" class=" ">@lang('legal.legal-disclosure')</h1>
-            </div><!-- /.col -->
+            <div class="intro">
+                <h1 class="fn">@lang('legal.legal-disclosure')</h1>
+            </div>
 
-        </div><!-- /.row  -->
+        </div>
 
-    </div><!-- /.container -->
+    </div>
 
-</div><!-- /#home -->
+    <div class="sec-title">
 
-<div id="legal" class="cream-container parallax" data-speed="1" data-offsetY="-150">
+        <div class="container">
 
-    <div class="icon-container"><div><span class="icomoon-big icomoon-hammer2"><i></i></span></div></div>
+            <h2>@lang('legal.legal-disclosure')</h2>
 
-    <div class="container wrap">
+        </div>
 
-        <div class="row">
+    </div>
 
-            <div class="col dimfull text-center">
+    <div class="container" style="text-align: center">
+        <h4>
+            @lang('legal.information-tmg5')
+            <span style="font-family: 'Arial', sans-serif;font-weight: bold;">&sect;</span>
+            5 Telemediengesetz (TMG)
+        </h4>
+        <br/>
+        <p style="font-size: 100%;">
+            @lang('legal.information-name')<br/>
+            @lang('legal.information-adr')<br/>
+            @lang('legal.information-adr2')<br/>
+            @lang('legal.information-adr3')<br/>
+        </p>
+        <br/>
+        <h4>@lang('legal.information-contact')</h4>
+        <dl class="row">
+            <dt class="column dim1half text-right padright">@lang('legal.information-phone')</dt>
+            <dd class="column dim1half text-left padleft">@lang('legal.information-phone-val')</dd>
 
-                <h2 id="impressum">@lang('legal.legal-disclosure')</h2>
+            <dt class="column dim1half text-right padright">@lang('legal.information-mail')</dt>
+            <dd class="column dim1half text-left padleft"><a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501h-OD9C75BfXnkoGnpom4HA\75\75\46c\0754IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">lukas...</a>@googlemail.com</dd>
+        </dl>
+        <br style="clear: both;"/>
+        <br/>
+        <p>
+            @lang('legal.information-source'): <a href="http://www.e-recht24.de">http://www.e-recht24.de</a>
+        </p>
+    </div>
 
-                <h4>@lang('legal.information-tmg5')</h4>
-                <p>
-                    @lang('legal.information-name')<br/>
-                    @lang('legal.information-adr')<br/>
-                    @lang('legal.information-adr2')<br/>
-                    @lang('legal.information-adr3')<br/>
-                </p>
+</section>
 
-                <h4>@lang('legal.information-contact')</h4>
-                <dl class="row">
-                    <dt class="col legal-col dim1half text-right padright">@lang('legal.information-phone')</dt>
-                    <dd class="col dim1half text-left padleft">@lang('legal.information-phone-val')</dd>
+<section id="disclaimer">
 
-                    <dt class="col legal-col dim1half text-right padright">@lang('legal.information-mail')</dt>
-                    <dd class="col dim1half text-left padleft"><a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501h-OD9C75BfXnkoGnpom4HA\75\75\46c\0754IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">lukas...</a>@googlemail.com</dd>
-                </dl>
-                <p>
-                    @lang('legal.information-source'): <a href="http://www.e-recht24.de">http://www.e-recht24.de</a>
-                </p>
+    <div class="sec-title">
 
-                <p></p>
+        <div class="container">
 
-                <h2 id="disclaimer">@lang('legal.disclaimer-heading')</h2>
+            <h2>@lang('legal.disclaimer-heading')</h2>
 
-                <h4>@lang('legal.disclaimer-content')</h4>
+        </div>
 
-                <p class="just">
-                    @lang('legal.disclaimer-content-val')
-                </p>
+    </div>
 
-                <h4>@lang('legal.disclaimer-links')</h4>
+    <div class="container">
 
-                <p class="just">
-                    @lang('legal.disclaimer-links-val')
-                </p>
+        <h4>@lang('legal.disclaimer-content')</h4>
 
-                <h4>@lang('legal.disclaimer-copyr')</h4>
+        <p>
+            @lang('legal.disclaimer-content-val')
+        </p>
 
-                <p class="just">
-                    @lang('legal.disclaimer-copyr-val')
-                </p>
+        <h4>@lang('legal.disclaimer-links')</h4>
 
-                <p>@lang('legal.disclaimer-source'): <a href="http://www.e-recht24.de/muster-disclaimer.html">eRecht24</a></p>
+        <p>
+            @lang('legal.disclaimer-links-val')
+        </p>
 
-                <h2 id="privacy">@lang('legal.privacy-heading')</h2>
+        <h4>@lang('legal.disclaimer-copyr')</h4>
 
-                <h4>@lang('legal.privacy-policy')</h4>
+        <p>
+            @lang('legal.disclaimer-copyr-val')
+        </p>
 
-                <p class="just">
-                    @lang('legal.privacy-policy-val')
-                </p>
+        <p>@lang('legal.disclaimer-source'): <a href="http://www.e-recht24.de/muster-disclaimer.html">eRecht24</a></p>
 
-                <p>@lang('legal.privacy-source'): <a href="http://www.e-recht24.de/muster-datenschutzerklaerung.html">eRecht24</a></p>
+    </div>
 
-                <br/>
-                <br/>
+</section>
 
-                <p>
-                    <a class="btn" href="/?lang=<?=App::getLocale()?>">@lang('legal.back-button')</a>
-                </p>
-            </div><!-- /.col -->
+<section id="privacy">
 
-        </div><!-- /.row  -->
+    <div class="sec-title">
 
-    </div><!-- /.container -->
+        <div class="container">
 
-</div><!-- /#about -->
+            <h2>@lang('legal.privacy-heading')</h2>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h4>@lang('legal.privacy-policy')</h4>
+
+        <p class="just">
+            @lang('legal.privacy-policy-val')
+        </p>
+
+        <p>@lang('legal.privacy-source'): <a href="http://www.e-recht24.de/muster-datenschutzerklaerung.html">eRecht24</a></p>
+
+        <br/>
+        <br/>
+
+        <p style="text-align: center;">
+            <a class="btn" href="/?lang=<?=App::getLocale()?>">@lang('legal.back-button')</a>
+        </p>
+
+    </div>
+
+</section>
 @stop

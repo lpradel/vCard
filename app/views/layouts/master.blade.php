@@ -2,17 +2,19 @@
 
 if (App::getLocale() == "en") {
     $lang = "en-US";
+    $lang_plain = "en";
 } else {
     $lang = "de-DE";
+    $lang_plain = "de";
 }
 ?>
 
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="<?=$lang?>"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="<?=$lang?>"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="<?=$lang?>"> <![endif]-->
+<!--[if lt IE 7 ]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="<?=$lang?>"> <![endif]-->
+<!--[if IE 7 ]><html class="no-js lt-ie9 lt-ie8" lang="<?=$lang?>"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js lt-ie9" lang="<?=$lang?>"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="<?=$lang?>"><!--<![endif]-->
+<html lang="<?=$lang?>" class="no-js"><!--<![endif]-->
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -41,10 +43,14 @@ if (App::getLocale() == "en") {
     <!-- CSS
     ================================================== -->
 
-    <link rel="stylesheet" id="o-responsive-css" href="/css/o-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" id="themestyle-css" href="/css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="glyphicons-css" href="/css/glyphicons.css" type="text/css" media="all">
-    <link rel="stylesheet" id="icomoon-css" href="/css/icomoon.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/polyglot-language-switcher.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" media="all">
+
+    <!-- JS
+    ================================================== -->
+    <script src="/js/modernizr-2.6.2.min.js"></script>
 
     <!-- Google Fonts
     ================================================== -->
@@ -53,80 +59,78 @@ if (App::getLocale() == "en") {
 
 </head>
 
-<body class="fullwidth boxed " data-device="" data-maxcols="">
-<div id="top"></div>
+<body>
 
+<div class="wrapper vcard">
 
-<header>
-    <div id="header">
-        <div class="container wrap text-center">
-            <span class="">Lukas Pradel |</span>
-            <span class="">Software Engineer</span>
+    <!-- BEGIN NAV -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-trigger"></div>
+            @section('menu')
+            @show
         </div>
+    </nav>
+    <!-- END NAV -->
 
-        @section('language-links')
+    <main>
+    <!-- BEGIN MAIN CONTAINER -->
+    <div class="main">
+        @section('main')
         @show
 
-        <a href="#sidr" id="menutrigger" class="pull-right btn icon transparent"><span class="glyphicons justify"><i></i></span></a><span class="clear"></span>
-    </div><!-- /#header -->
-</header>
+        <footer>
+            <div class="contacts">
+                <div class="inner">
+                    &copy; 2014 <em>Lukas Pradel</em> |
+                    <a href="@lang('routes.legal')?lang=<?=$lang_plain?>">
+                        @lang('index.menu-legal')
+                    </a> |
+                    Built with <a href="http://laravel.com/">Laravel/4.1.25</a> |
+                    Hosted at <a href="http://digitalocean.com/">DigitalOcean</a> |
+                    Powered by <a href="http://nginx.org/">nginx/1.6.0</a>
 
-@yield('sidebar-nav')
+                    @section('language-links')
+                    @show
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- END MAIN CONTAINER -->
+    </main>
 
-<main>
-@section('main')
-@show
-</main>
-
-
-
-
-
-<footer>
-    <div id="copyright">
-
-        <div class="container wrap">
-
-            <div class="row">
-
-                <div class="col dimfull text-center">
-
-                    <p>
-                        &copy; 2014 <em>Lukas Pradel</em> |
-                        <a href="@lang('routes.legal')">
-                            @lang('index.menu-legal')
-                        </a> |
-                        Built with <a href="http://laravel.com/">Laravel/4.1.25</a> |
-                        Hosted at <a href="http://digitalocean.com/">DigitalOcean</a> |
-                        Powered by <a href="http://nginx.org/">nginx/1.6.0</a>
-                    </p>
-
-
-                </div><!-- /.col -->
-
-            </div><!-- /.row  -->
-
-        </div><!-- /.container -->
-
-    </div><!-- /#copyright -->
-</footer>
-
-
-
-
-<a style="display: none;" href="#" id="scrolltop" title="Top"><span class="glyphicons up_arrow"><i></i></span></a>
-
+</div>
 
 <!-- End Document
 ================================================== -->
 
-<script type="text/javascript" src="/js/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.migrate.min.js"></script>
-<script type="text/javascript" src="/js/klass.min.js"></script>
-<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="/js/jquery.sidr.min.js"></script>
-<script type="text/javascript" src="/js/scripts.js"></script>
+<script src="/js/jquery-1.10.1.min.js"></script>
+<script src="/js/jquery.polyglot.language.switcher.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+            effect: 'fade',
+            testMode: false,
+            websiteType: 'dynamic',
+            paramName: 'lang',
+                onChange: function(evt){
+                return;
+            }
+        });
+    });
+</script>
 
+<script src="/plugins/ope-page-nav/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/plugins/ope-page-nav/jquery.scrollTo.js"></script>
+<script src="/plugins/ope-page-nav/jquery.nav.js"></script>
+
+<script src="/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+<script src="/plugins/quicksand/jquery.quicksand.js"></script>
+
+<script src="/plugins/validate/jquery.validate.js"></script>
+
+<script src="/js/scripts.js"></script>
 
 </body>
 

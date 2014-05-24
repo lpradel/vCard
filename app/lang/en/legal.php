@@ -8,7 +8,7 @@ return array(
     'legal-disclosure'          => 'Legal Disclosure',
 
     // Legal Disclosure
-    'information-tmg5'          => 'Information in line with &sect; 5 Telemediengesetz (TMG)',
+    'information-tmg5'          => 'Information in line with',
     'information-name'          => 'Lukas Pradel',
     'information-adr'           => 'Ostendstra&szlig;e 10d',
     'information-adr2'          => '59427 Unna',

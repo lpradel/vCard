@@ -9,6 +9,7 @@ return array(
     // Menü
     'menu-home'             => 'Start',
     'menu-aboutme'          => '&Uuml;ber mich',
+    'menu-cv'               => 'Lebenslauf',
     'menu-personal'         => 'Pers&ouml;nliche Informationen',
     'menu-edu'              => 'Ausbildung',
     'menu-emp'              => 'Berufst&auml;tigkeit',
@@ -30,7 +31,11 @@ return array(
     'aboutme-main-5'        => 'bei der',
     'aboutme-main-ad'       => 'adesso AG.',
     'aboutme-main-6'        => '',
-    'aboutme-main-7'        => 'In meiner Freizeit treibe ich gerne Lauf- und Kraftsport, lese Science-Fiction und Fantasy oder spiele',
+    'aboutme-main-7'        => 'Meine Programmierprojekte und Open Source Beitr&auml;ge sind auf',
+    'aboutme-main-8'        => 'Interessant ist in dieser Hinsicht vielleicht auch meine ',
+    'aboutme-main-9'        => 'In meiner Freizeit treibe ich gerne Lauf- und Kraftsport, lese Science-Fiction und Fantasy oder spiele',
+    'aboutme-cv-en'         => 'Lebenslauf-Download (Englisch)',
+    'aboutme-cv-de'         => 'Lebenslauf-Download (Deutsch)',
 
     // Persönliche Informationen
     'personal-heading'      => 'Pers&ouml;nliche Informationen',
@@ -50,7 +55,7 @@ return array(
     // Ausbildung - MSc
     'edu-heading'           => 'Ausbildung',
     'edu-msc-period'        => '2012 - heute',
-    'edu-msc-school'        => 'Technische Universit&auml;t Dortmund',
+    'edu-msc-school'        => 'TU Dortmund',
     'edu-msc-city'          => 'Dortmund',
     'edu-msc-title'         => 'Master of Science',
     'edu-msc-desc'          => 'Ich studiere derzeit im vierten Master-Semester und plane mein Studium im Frühling 2015 abzuschlie&szlig;en.
@@ -66,7 +71,7 @@ return array(
 
     // Ausbildung - BSc
     'edu-bsc-period'        => '2009 - 2012',
-    'edu-bsc-school'        => 'Technische Universit&auml;t Dortmund',
+    'edu-bsc-school'        => 'TU Dortmund',
     'edu-bsc-city'          => 'Dortmund',
     'edu-bsc-title'         => 'Bachelor of Science',
     'edu-bsc-desc'          => 'Mein Bachelor-Studium der Informatik habe ich in Regelstudienzeit mit Nebenfach Wirtschaftswissenschaften abgeschlossen.
@@ -99,7 +104,7 @@ return array(
 
     // Beruf - Studentische Hilfskraft TUD
     'emp-tud-stud-period'   => '2010 - heute',
-    'emp-tud-stud-company'  => 'Technische Universit&auml;t Dortmund',
+    'emp-tud-stud-company'  => 'TU Dortmund',
     'emp-tud-stud-position' => 'Studentische Hilfskraft',
     'emp-tud-stud-desc'     => 'Am Lehrstuhl f&uuml; Effiziente Algorithmen und Komplexit&auml;tstheorie helfe ich bei der Gestaltung der Lehre,
                                 dem Schreiben von Papern und oft der Literaturrecherche.
@@ -146,15 +151,15 @@ return array(
     'social-desc-3'         => 'unten erreichbar.',
 
     // Kontakt
-    'contact-heading'       => 'Kontaktformular',
-    'contact-desc'          => '',
+    'contact-heading'       => 'Kontakt',
+    'contact-desc'          => 'Kontaktformular',
     'contact-name'          => 'Name',
     'contact-name-ph'       => 'Ihr Name',
     'contact-name-error'    => 'Bitte geben Sie Ihren Namen ein.',
     'contact-email'         => 'Email',
     'contact-email-ph'      => 'Ihre Email-Adresse',
     'contact-email-error'   => 'Bitte geben Sie eine g&uuml;ltige Email-Adresse ein.',
-    'contact-subject'       => 'Betreffe',
+    'contact-subject'       => 'Betreff',
     'contact-subject-ph'    => 'Ihr Betreff',
     'contact-msg'           => 'Nachricht',
     'contact-msg-ph'        => 'Ihre Nachricht',
