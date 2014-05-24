@@ -31,9 +31,9 @@
     <div id="sidr" class="hidden">
         <h3>Navigation</h3><a href="#" class="navclose"><span class="glyphicons remove_2"><i></i></span></a>
         <ul>
-            <li><a href="#impressum" >Impressum</a></li>
-            <li><a href="#disclaimer" >Haftungsausschluss</a></li>
-            <li><a href="#privacy">Datenschutzerklärung</a></li>
+            <li><a href="#impressum" >@lang('legal.legal-disclosure')</a></li>
+            <li><a href="#disclaimer" >@lang('legal.disclaimer-heading')</a></li>
+            <li><a href="#privacy">@lang('legal.privacy-heading')</a></li>
         </ul>
     </div>
 </nav>
@@ -41,9 +41,9 @@
 
 @section('menu')
 <ul>
-    <li class="current"><a href="#impressum">Impressum</a></li>
-    <li><a href="#disclaimer">Haftungsausschluss</a></li>
-    <li><a href="#privacy">Datenschutzerklärung</a></li>
+    <li class="current"><a href="#impressum">@lang('legal.legal-disclosure')</a></li>
+    <li><a href="#disclaimer">@lang('legal.disclaimer-heading')</a></li>
+    <li><a href="#privacy">@lang('legal.privacy-heading')</a></li>
 </ul>
 @stop
 
