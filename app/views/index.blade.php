@@ -56,8 +56,8 @@ Lukas Pradel
                     <li><a href="https://www.youtube.com/user/LukasPradel" class="item-10"></a></li>
                 </ul>
                 <div class="center">
-                    <a href="/public/download/cv.pdf" class="btn-2">@lang('index.aboutme-cv-en')</a>
-                    <a href="/public/download/cv.pdf" class="btn-2">@lang('index.aboutme-cv-de')</a>
+                    <a href="/public/download/cv.lukas.pradel.en.pdf" class="btn-2">@lang('index.aboutme-cv-en')</a>
+                    <a href="/public/download/cv.lukas.pradel.de.pdf" class="btn-2">@lang('index.aboutme-cv-de')</a>
                 </div>
 
             </div>
