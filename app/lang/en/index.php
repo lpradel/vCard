@@ -59,7 +59,7 @@ return array(
     'edu-msc-title'         => 'MSc',
     'edu-msc-desc'          => 'I\'m currently in my second year of Master\'s studies. I intend to wrap it up in spring 2015.
                                 My Master\'s thesis will probably be about efficient algorithms for clustering problems.',
-    'edu-msc-notable'       => 'Notable courses:',
+    'edu-msc-notable'       => 'Relevant courses:',
     'edu-msc-notable-1'     => 'Randomized algorithms',
     'edu-msc-notable-2'     => 'Graph algorithms',
     'edu-msc-notable-3'     => 'Seminar on algorithm engineering',
@@ -75,7 +75,7 @@ return array(
     'edu-bsc-desc'          => 'I finished my Bachelor\'s degree in computer science in the standard period of study with a minor in economic sciences.
                                 The focus of my studies were theoretical computer science and the design and analysis of efficient algorithms.
                                 In my bachelor thesis I developed &quot;Symbolic algorithms for weighted matchings&quot;.',
-    'edu-bsc-notable'       => 'Notable courses:',
+    'edu-bsc-notable'       => 'Relevant courses:',
     'edu-bsc-notable-1'     => 'Data structures, algorithms and programming I + II',
     'edu-bsc-notable-2'     => 'Calculus, algebra, probability calculus and statistics',
     'edu-bsc-notable-3'     => 'Introduction to theoretical computer science',

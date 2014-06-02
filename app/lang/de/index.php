@@ -60,7 +60,7 @@ return array(
     'edu-msc-title'         => 'Master of Science',
     'edu-msc-desc'          => 'Ich studiere derzeit im vierten Master-Semester und plane mein Studium im Frühling 2015 abzuschlie&szlig;en.
                                 In meiner Masterarbeit werde ich mich voraussichtlich mit effizienten Algorithmen f&uuml;r Clustering-Probleme besch&auml;ftigen.',
-    'edu-msc-notable'       => 'Ausgew&auml;hlte Veranstaltungen:',
+    'edu-msc-notable'       => 'Relevante Veranstaltungen:',
     'edu-msc-notable-1'     => 'Randomisierte Algorithmen',
     'edu-msc-notable-2'     => 'Graphalgorithmen',
     'edu-msc-notable-3'     => 'Seminar Algorithm Engineering',
@@ -77,7 +77,7 @@ return array(
     'edu-bsc-desc'          => 'Mein Bachelor-Studium der Informatik habe ich in Regelstudienzeit mit Nebenfach Wirtschaftswissenschaften abgeschlossen.
                                 Inhaltliche Schwerpunkte meines Studiums waren theoretische Informatik sowie Analyse und Entwurf effizienter Algorithmen.
                                 Das Thema meiner Bachelorarbeit lautet: &quot;Implizite Graphalgorithmen f&uuml;r gewichtsmaximale Matchings&quot;.',
-    'edu-bsc-notable'       => 'Ausgew&auml;hlte Veranstaltungen:',
+    'edu-bsc-notable'       => 'Relevante Veranstaltungen:',
     'edu-bsc-notable-1'     => 'Datenstrukturen, Algorithmen und Programmierung I + II',
     'edu-bsc-notable-2'     => 'Analysis, Lineare Algebra, Wahrscheinlichkeitsrechnung und Statistik',
     'edu-bsc-notable-3'     => 'Grundlagen der theoretischen Informatik',
