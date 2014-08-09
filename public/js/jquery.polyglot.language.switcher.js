@@ -268,7 +268,7 @@
                 if (length > 0) {
                     ulElement.append(liElement);
                 } else {
-                    aElement = $("<a id=\"" + $(this).attr("id") + "\" class=\"current\" href=\"#\" onclick=\"javascript:return false;\">" + $(this).text() + " <span class=\"trigger\">&raquo;</span></a>");
+                    aElement = $("<a id=\"" + $(this).attr("id") + "\" class=\"current\" href=\"#\" onclick=\"javascript:return false;\">" + $(this).text() + " <span class=\"trigger\"></span></a>");
                     if (settings.openMode == 'hover') {
                         aElement.hover(function () {
                             open();
