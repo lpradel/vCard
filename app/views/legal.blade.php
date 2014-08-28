@@ -56,7 +56,7 @@
     </div>
 </section>
 
-<section>
+<section class="text-justify">
     <h2>@lang('legal.disclaimer-heading')</h2>
 
     <h4>@lang('legal.disclaimer-content')</h4>
@@ -77,7 +77,7 @@
     <p class="text-right">@lang('legal.disclaimer-source'): <a href="http://www.e-recht24.de/muster-disclaimer.html">eRecht24</a></p>
 </section>
 
-<section>
+<section class="text-justify">
     <h2>@lang('legal.privacy-heading')</h2>
 
     <h4>@lang('legal.privacy-policy')</h4>
