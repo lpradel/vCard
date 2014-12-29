@@ -45,7 +45,11 @@ if (App::getLocale() == "en") {
 <footer>
     <hr/>
     <div class="notes">
-    &copy; 2014 <em>Lukas Pradel</em> |
+    &copy; <?php
+        $fromYear = 2014;
+        $thisYear = (int)date('Y');
+        echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?>
+        <em>Lukas Pradel</em> |
     <a href="@lang('routes.legal')?lang=<?=$lang_plain?>">
         @lang('index.menu-legal')
     </a>
