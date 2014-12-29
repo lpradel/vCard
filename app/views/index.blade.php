@@ -83,9 +83,5 @@ Lukas Pradel
             <li><a href="https://plus.google.com/+LukasPradel/">Google+</a></li>
         </ul>
     </section>
-
-    <section>
-
-    </section>
 </main>
 @stop
