@@ -61,7 +61,7 @@ Lukas Pradel
             </li>
             <li>
                 @lang('index.work-2-1')
-                <a href="http://ls2-www.informatik.uni-dortmund.de/">@lang('index.work-2-2')</a>
+                <a href="https://github.com/lpradel/master-thesis">@lang('index.work-2-2')</a>
                 @lang('index.work-2-3')
             </li>
             <li>
