@@ -3,8 +3,8 @@
 return array(
 
     'about'     => 'About',
-    'about-1-1' => 'Pursuing a master\'s degree in computer science at ',
-    'about-1-2' => 'Technische Universit&auml;t Dortmund',
+    'about-1-1' => 'Pursuing a PhD in computer science at ',
+    'about-1-2' => 'paluno',
     'about-1-3' => '(Germany)',
     'about-2-1' => 'I enjoy running, working out, ',
     'about-2-2' => 'video games',
@@ -15,10 +15,10 @@ return array(
     'about-3-4' => 'German',
 
     'work'      => 'Current work',
-    'work-1-1'  => 'Student employee at',
-    'work-2-1'  => 'Writing my',
-    'work-2-2'  => 'master thesis',
-    'work-2-3'  => 'at TU Dortmund',
+    'work-1-1'  => 'Research assistant at',
+    'work-2-1'  => 'Teaching as a member of Volker Gruhn\'s',
+    'work-2-2'  => 'software engineering group',
+    'work-2-3'  => 'at University of Duisburg-Essen',
     'work-3-1'  => 'My open source',
     'work-3-2'  => 'projects',
 

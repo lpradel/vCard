@@ -36,7 +36,7 @@ Lukas Pradel
         <ul>
             <li>
                 @lang('index.about-1-1')
-                <a href="http://www.cs.tu-dortmund.de/nps/en/Home/index.html">@lang('index.about-1-2')</a>
+                <a href="https://paluno.uni-due.de/">@lang('index.about-1-2')</a>
                 @lang('index.about-1-3')
             </li>
             <li>
@@ -57,11 +57,11 @@ Lukas Pradel
         <ul>
             <li>
                 @lang('index.work-1-1')
-                <a href="http://www.adesso.de/en/">adesso AG</a>
+                <a href="https://paluno.uni-due.de/">paluno</a>
             </li>
             <li>
                 @lang('index.work-2-1')
-                <a href="https://github.com/lpradel/master-thesis">@lang('index.work-2-2')</a>
+                <a href="http://www.se.wiwi.uni-due.de/">@lang('index.work-2-2')</a>
                 @lang('index.work-2-3')
             </li>
             <li>
