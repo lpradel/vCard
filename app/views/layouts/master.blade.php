@@ -13,7 +13,7 @@ if (App::getLocale() == "en") {
 <html lang="<?=$lang?>">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta charset="UTF-8">
     <title>
