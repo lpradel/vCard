@@ -8,7 +8,7 @@ Lukas Pradel
 @if (App::getLocale() == "en")
 <div id="polyglotLanguageSwitcher">
     <form action="#">
-        <select id="polyglot-language-options">
+        <select id="polyglot-language-options" title="Select language">
             <option id="en" value="en" selected>English</option>
             <option id="de" value="de">German</option>
         </select>
