@@ -38,7 +38,7 @@ if (App::getLocale() == "en") {
     <link rel="stylesheet" type="text/css" href="/css/polyglot-language-switcher.css" media="all">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
 @section('main')
 @show
 
