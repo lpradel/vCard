@@ -10,7 +10,7 @@ if (App::getLocale() == "en") {
 ?>
 
 <!DOCTYPE html>
-<html lang="<?=$lang?>">
+<html lang="<?=$lang?>" prefix="og: http://ogp.me/ns#">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,6 +26,11 @@ if (App::getLocale() == "en") {
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Lukas Pradel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lukaspradel.com/" />
+    <meta property="og:image" content="https://lukaspradel.com/images/me.jpg" />
 
     <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon-iphone-60x60.png">
