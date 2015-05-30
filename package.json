@@ -1,0 +1,25 @@
+{
+  "name" : "lukaspradel.com",
+  "version" : "1.0.0",
+  "description" : "Personal website of Lukas Pradel",
+  "homepage" : "lukaspradel.com",
+  "license" : "Apache-2.0",
+  "author" : "Lukas Pradel <lukas.pradel@googlemail.com>",
+  "contributors" : [{
+    "name" : "Lukas Pradel",
+    "email" : "lukas.pradel@googlemail.com"
+  }],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/lpradel/lukaspradel.com/"
+  },
+  "bugs" : "https://github.com/lpradel/lukaspradel.com/issues",
+  "preferGlobal" : "false",
+  "private" : "true",
+  "devDependencies": {
+    "grunt": ">=0.4.5",
+    "grunt-contrib-concat": ">=0.5.1",
+    "grunt-contrib-cssmin" : ">=0.12.3",
+    "grunt-contrib-watch" : ">=0.6.1"
+  }
+}
