@@ -39,8 +39,7 @@ if (App::getLocale() == "en") {
     <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-ipad-retina-152x152.png">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic%7COpen+Sans:700,400%7CSource+Sans+Pro:700,400" media="all">
-    <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/css/polyglot-language-switcher.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/style.combined.css" media="all">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
