@@ -76,7 +76,6 @@ Lukas Pradel
         <ul>
             <li><a href="http://blog.lukaspradel.com">Blog</a></li>
             <li><a href="http://github.com/lpradel">GitHub</a></li>
-            <li><a href="http://osrc.dfm.io/lpradel/">Open Source Report Card</a></li>
             <li><a href="https://www.linkedin.com/in/lukaspradel">LinkedIn</a></li>
             <li><a href="https://www.xing.com/profile/Lukas_Pradel/">XING</a></li>
             <li><a href="https://twitter.com/lukaspradel">Twitter</a></li>
