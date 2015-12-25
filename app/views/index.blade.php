@@ -75,6 +75,7 @@ Lukas Pradel
         <h2>@lang('index.more-info')</h2>
         <ul>
             <li><a href="http://blog.lukaspradel.com">Blog</a></li>
+            <li><a href="/public/download/pubring.asc">GPG</a></li>
             <li><a href="http://github.com/lpradel">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/lukaspradel">LinkedIn</a></li>
             <li><a href="https://www.xing.com/profile/Lukas_Pradel/">XING</a></li>
