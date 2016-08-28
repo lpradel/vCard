@@ -2,27 +2,22 @@
 
 return array(
 
-    'about'     => 'About',
-    'about-1-1' => 'Pursuing a PhD in computer science at ',
-    'about-1-2' => 'paluno',
-    'about-1-3' => '(Germany)',
-    'about-2-1' => 'I enjoy running, working out, ',
+    'about-0-0' => 'Software developer / PhD student',
+    'about-1-0' => 'Hi there! My name is Lukas.',
+    'about-1-1' => 'I\'m a research assistant at',
+    'about-1-2' => ' where I\'m pursuing a PhD in computer science.',
+    'about-2-1' => 'I like running, working out, ',
     'about-2-2' => 'video games',
-    'about-2-3' => 'science fiction, fantasy and whisk(e)y',
-    'about-3-1' => 'My CV in',
-    'about-3-2' => 'English',
-    'about-3-3' => 'and',
-    'about-3-4' => 'German',
+    'about-2-3' => 'currywurst, science fiction, whisk(e)y',
+    'about-2-4' => 'and ',
+    'about-2-5' => 'riding my motorcycle',
 
-    'work'      => 'Current work',
-    'work-1-1'  => 'Research assistant at',
-    'work-2-1'  => 'Teaching as a member of Volker Gruhn\'s',
-    'work-2-2'  => 'software engineering group',
-    'work-2-3'  => 'at University of Duisburg-Essen',
-    'work-3-1'  => 'My open source',
-    'work-3-2'  => 'projects',
-
-    'more-info' => 'More Info',
+    'col-1-0'   => 'Info',
+    'col-1-1'   => 'English CV',
+    'col-1-2'   => 'German CV',
+    'col-2-0'   => 'Dev',
+    'col-3-0'   => 'Social',
+    'col-4-0'   => 'Contact',
 
     'menu-legal'    => 'Legal disclosure'
 

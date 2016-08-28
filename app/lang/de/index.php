@@ -2,27 +2,22 @@
 
 return array(
 
-    'about'         => '&Uuml;ber',
-    'about-1-1'     => 'Doktorand in Informatik bei',
-    'about-1-2'     => 'paluno',
-    'about-1-3'     => '',
+    'about-0-0'     => 'Software Entwickler / Doktorand',
+    'about-1-0'     => 'Tach auch! Ich bin Lukas,',
+    'about-1-1'     => 'wissenschaftlicher Mitarbeiter und Doktorand der Informatik bei',
+    'about-1-2'     => '.',
     'about-2-1'     => 'Ich treibe gerne Lauf- und Kraftsport, ich mag',
     'about-2-2'     => 'Videospiele',
-    'about-2-3'     => 'Science-Fiction, Fantasy und Whisk(e)y',
-    'about-3-1'     => 'Mein Lebenslauf auf',
-    'about-3-2'     => 'Englisch',
-    'about-3-3'     => 'und',
-    'about-3-4'     => 'Deutsch',
+    'about-2-3'     => 'Currywurst, Science-Fiction, Whisk(e)y',
+    'about-2-4'     => 'und ',
+    'about-2-5'     => 'Motorradfahren',
 
-    'work'          => 'Aktuelle Projekte',
-    'work-1-1'      => 'Wissenschaftlicher Mitarbeiter bei',
-    'work-2-1'      => 'Lehre in der',
-    'work-2-2'      => 'Software Engineering Gruppe',
-    'work-2-3'      => 'von Volker Gruhn an der Universit&auml;t Duisburg-Essen',
-    'work-3-1'      => 'Meine Open Source',
-    'work-3-2'      => 'Projekte',
-
-    'more-info'     => 'Mehr Infos',
+    'col-1-0'       => 'Infos',
+    'col-1-1'       => 'Lebenslauf (en.)',
+    'col-1-2'       => 'Lebenslauf (dt.)',
+    'col-2-0'       => 'Dev',
+    'col-3-0'       => 'Social',
+    'col-4-0'       => 'Kontakt',
 
     'menu-legal'    => 'Impressum'
 

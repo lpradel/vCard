@@ -6,82 +6,86 @@ Lukas Pradel
 
 @section('language-links')
 @if (App::getLocale() == "en")
-<div id="polyglotLanguageSwitcher">
-    <form action="#">
-        <select id="polyglot-language-options" title="Select language">
-            <option id="en" value="en" selected>English</option>
-            <option id="de" value="de">German</option>
-        </select>
-    </form>
-</div>
+    <div class="polyglot-language-switcher" data-grid-columns="1" data-anim-effect="fade" data-open-mode="click" style="display:inline;">
+        <ul style="display: none">
+            <li><a href="/?lang=de" title="German" data-lang-id="de_DE"> Deutsch</a></li>
+            <li><a href="/?lang=en" title="English"  data-lang-id="en_US" class="pls-selected-locale"> English</a></li>
+        </ul>
+    </div>
 @else
-<div id="polyglotLanguageSwitcher">
-    <form action="#">
-        <select id="polyglot-language-options">
-            <option id="en" value="en">Englisch</option>
-            <option id="de" value="de" selected>Deutsch</option>
-        </select>
-    </form>
-</div>
+    <div class="polyglot-language-switcher" data-grid-columns="1" data-anim-effect="fade" data-open-mode="click" style="display:inline;">
+        <ul style="display: none">
+            <li><a href="/?lang=de" title="German" data-lang-id="de_DE" class="pls-selected-locale"> Deutsch</a></li>
+            <li><a href="/?lang=en" title="English"  data-lang-id="en_US" > English</a></li>
+        </ul>
+    </div>
 @endif
 @stop
 
 @section('main')
 <main>
-    <div id="logo"><img src="images/me.jpg" alt="Photo" title="" /><h1>Lukas Pradel</h1></div>
-
-    <section>
-
-        <h2>@lang('index.about')</h2>
-        <ul>
-            <li>
+    <div class="v-card">
+        <div class="container-fluid">
+            <div class="ui-user">
+                <img src="images/me.jpg" alt="" class="img-responsive" />
+                <h3><a href="#">Lukas Pradel</a><span>@lang('index.about-0-0')</span></h3>
+            </div>
+            <p> @lang('index.about-1-0')
                 @lang('index.about-1-1')
-                <a href="https://paluno.uni-due.de/">@lang('index.about-1-2')</a>
-                @lang('index.about-1-3')
-            </li>
-            <li>
+                <a href="https://paluno.uni-due.de/"><span class="red">paluno</span></a>@lang('index.about-1-2')
                 @lang('index.about-2-1')
-                <a href="http://steamcommunity.com/id/boonzsteam/">@lang('index.about-2-2')</a>,
+                <a href="http://steamcommunity.com/id/boonzsteam/"><span class="red">@lang('index.about-2-2')</span></a>,
                 @lang('index.about-2-3')
-            </li>
-            <li>
-                @lang('index.about-3-1')
-                <a href="/public/download/cv.lukas.pradel.en.pdf">@lang('index.about-3-2')</a>
-                @lang('index.about-3-3')
-                <a class="btn-2" href="/public/download/cv.lukas.pradel.de.pdf">@lang('index.about-3-4')</a></li>
-        </ul>
-    </section>
+                @lang('index.about-2-4')
+                <a href="images/wee.jpg"><span class="red">@lang('index.about-2-5')</span></a>.
+            </p>
 
-    <section>
-        <h2>@lang('index.work')</h2>
-        <ul>
-            <li>
-                @lang('index.work-1-1')
-                <a href="https://paluno.uni-due.de/">paluno</a>
-            </li>
-            <li>
-                @lang('index.work-2-1')
-                <a href="http://www.se.wiwi.uni-due.de/">@lang('index.work-2-2')</a>
-                @lang('index.work-2-3')
-            </li>
-            <li>
-                @lang('index.work-3-1')
-                <a href="https://github.com/lpradel">@lang('index.work-3-2')</a>
-            </li>
-        </ul>
-    </section>
+            <br />
+            <hr />
 
-    <section>
-        <h2>@lang('index.more-info')</h2>
-        <ul>
-            <li><a href="http://blog.lukaspradel.com">Blog</a></li>
-            <li><a href="https://keybase.io/lpradel">GPG</a></li>
-            <li><a href="http://github.com/lpradel">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/lukaspradel">LinkedIn</a></li>
-            <li><a href="https://www.xing.com/profile/Lukas_Pradel/">XING</a></li>
-            <li><a href="https://twitter.com/lukaspradel">Twitter</a></li>
-            <li><a href="https://plus.google.com/+LukasPradel/">Google+</a></li>
-        </ul>
-    </section>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 col-mob">
+                    <div class="ui-item">
+                        <h4>@lang('index.col-1-0')</h4>
+                        <ul>
+                            <li><a href="http://blog.lukaspradel.com">Blog</a></li>
+                            <li><a href="/public/download/cv.lukas.pradel.en.pdf">@lang('index.col-1-1')</a></li>
+                            <li><a href="/public/download/cv.lukas.pradel.de.pdf">@lang('index.col-1-2')</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-mob">
+                    <div class="ui-item">
+                        <h4>@lang('index.col-2-0')</h4>
+                        <ul>
+                            <li><a href="http://github.com/lpradel">GitHub</a></li>
+                            <li><a href="http://stackoverflow.com/users/1055743/lpradel">StackOverflow</a></li>
+                            <li><a href="https://resume.github.io/?lpradel">OS Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-mob">
+                    <div class="ui-item">
+                        <h4>@lang('index.col-3-0')</h4>
+                        <ul>
+                            <li><a href="https://plus.google.com/+LukasPradel/">Google+</a></li>
+                            <li><a href="https://www.linkedin.com/in/lukaspradel">LinkedIn</a></li>
+                            <li><a href="https://www.xing.com/profile/Lukas_Pradel/">XING</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-mob">
+                    <div class="ui-item">
+                        <h4>@lang('index.col-4-0')</h4>
+                        <ul>
+                            <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01h-OD9C75BfXnkoGnpom4HA==&amp;c=4IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501h-OD9C75BfXnkoGnpom4HA\75\75\46c\0754IVZVNPuQv6ivAMBnpCo3qyiEOpYw8_bDeL5MexiuT0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">E-Mail</a></li>
+                            <li><a href="https://keybase.io/lpradel">GPG</a></li>
+                            <li><a href="https://twitter.com/lukaspradel">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 @stop

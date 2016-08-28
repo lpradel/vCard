@@ -15,7 +15,6 @@ if (App::getLocale() == "en") {
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta charset="UTF-8">
     <title>
         @section('title')
         @show
@@ -38,41 +37,36 @@ if (App::getLocale() == "en") {
     <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-iphone-retina-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-ipad-retina-152x152.png">
 
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic%7COpen+Sans:700,400%7CSource+Sans+Pro:700,400" media="all">
-    <link rel="stylesheet" type="text/css" href="/css/style.combined.css" media="all">
+
+    <link href="/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" media="all" rel="stylesheet">
+    <link href="/css/style.combined.css" media="all" rel="stylesheet">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
 @section('main')
 @show
 
-<footer>
-    <hr/>
-    <div class="notes">
-    &copy; <?php
-        $fromYear = 2014;
-        $thisYear = (int)date('Y');
-        echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?>
-        <em>Lukas Pradel</em> |
+<footer class="text-center">
+    Copyright &copy; <?php
+    $fromYear = 2014;
+    $thisYear = (int)date('Y');
+    echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : '');?> Lukas Pradel |
     <a href="@lang('routes.legal')?lang=<?=$lang_plain?>">
         @lang('index.menu-legal')
-    </a>
-    </div>
+    </a> |
     @section('language-links')
     @show
 </footer>
 
 <script src="/js/jquery-1.10.1.min.js"></script>
-<script src="/js/jquery.polyglot.language.switcher.js"></script>
+<script src="/js/jquery-polyglot.language.switcher.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
-            effect: 'fade',
-            testMode: false,
-            websiteType: 'dynamic',
-            paramName: 'lang',
-            onChange: function(evt){
-                return;
+    jQuery(document).ready(function ($) {
+        $('.polyglot-language-switcher').polyglotLanguageSwitcher({
+            selectedLang: function () {
+                return ($('html').attr('lang')).replace(/-/g,"_");
             }
         });
     });

@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             css: {
                 src: [
                     'public/css/style.css',
-                    'public/css/polyglot-language-switcher.css'
+                    'public/css/polyglot-language-switcher-2.css'
                 ],
                 dest: 'public/css/style.combined.css'
             }
