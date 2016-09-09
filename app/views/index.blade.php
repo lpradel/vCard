@@ -23,6 +23,7 @@ Lukas Pradel
 @stop
 
 @section('main')
+<?php $highlightNo = rand(1,6); // random color theme ?>
 <main>
     <div class="v-card">
         <div class="container-fluid">
@@ -32,12 +33,12 @@ Lukas Pradel
             </div>
             <p> @lang('index.about-1-0')
                 @lang('index.about-1-1')
-                <a href="https://paluno.uni-due.de/"><span class="red">paluno</span></a>@lang('index.about-1-2')
+                <a href="https://paluno.uni-due.de/"><span class="highlight{{$highlightNo}}">paluno</span></a>@lang('index.about-1-2')
                 @lang('index.about-2-1')
-                <a href="http://steamcommunity.com/id/boonzsteam/"><span class="red">@lang('index.about-2-2')</span></a>,
+                <a href="http://steamcommunity.com/id/boonzsteam/"><span class="highlight{{$highlightNo}}">@lang('index.about-2-2')</span></a>,
                 @lang('index.about-2-3')
                 @lang('index.about-2-4')
-                <a href="images/wee.jpg"><span class="red">@lang('index.about-2-5')</span></a>.
+                <a href="images/wee.jpg"><span class="highlight{{$highlightNo}}">@lang('index.about-2-5')</span></a>.
             </p>
 
             <br />

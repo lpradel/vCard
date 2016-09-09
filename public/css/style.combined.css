@@ -467,6 +467,24 @@ hr {
 .brown {
   color: #d08166 !important; }
 
+.highlight1 {
+  color: #f75353; !important; }
+
+.highlight2 {
+  color: #f03838; !important; }
+
+.highlight3 {
+  color: #5aa9ce; !important; }
+
+.highlight4 {
+  color: #e47c14; !important; }
+
+.highlight5 {
+  color: #2285f3; !important; }
+
+.highlight6 {
+  color: #ff9933; !important; }
+
 /* Background color classes */
 .bg-white {
   background-color: #ffffff !important; }
