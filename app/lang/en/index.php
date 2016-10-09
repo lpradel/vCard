@@ -8,7 +8,7 @@ return array(
     'about-1-2' => '.',
     'about-2-1' => 'I like running, working out, ',
     'about-2-2' => 'video games',
-    'about-2-3' => 'open source, the Ruhrpott and currywurst, science fiction, whisk(e)y',
+    'about-2-3' => 'open source software, the Ruhrpott and currywurst, science fiction, whisk(e)y',
     'about-2-4' => 'and ',
     'about-2-5' => 'riding my motorcycle',
 
