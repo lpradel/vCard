@@ -19,7 +19,7 @@ if (App::getLocale() == "en") {
         @section('title')
         @show
     </title>
-    <meta name="description" content="Software developer and computer science PhD candidate at paluno - The Ruhr Institute for Software Technology, University of Duisburg-Essen, Germany.">
+    <meta name="description" content="Software developer and associate researcher at paluno - The Ruhr Institute for Software Technology, University of Duisburg-Essen, Germany.">
     <meta name="author" content="Lukas Pradel">
 
     <meta name="HandheldFriendly" content="True" />

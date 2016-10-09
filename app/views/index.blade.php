@@ -49,7 +49,7 @@ Lukas Pradel
                     <div class="ui-item">
                         <h4>@lang('index.col-1-0')</h4>
                         <ul>
-                            <li><a href="http://blog.lukaspradel.com">Blog</a></li>
+                            <li><a href="https://blog.lukaspradel.com">Blog</a></li>
                             <li><a href="/public/download/cv.lukas.pradel.en.pdf">@lang('index.col-1-1')</a></li>
                             <li><a href="/public/download/cv.lukas.pradel.de.pdf">@lang('index.col-1-2')</a></li>
                         </ul>
@@ -59,8 +59,8 @@ Lukas Pradel
                     <div class="ui-item">
                         <h4>@lang('index.col-2-0')</h4>
                         <ul>
-                            <li><a href="http://github.com/lpradel">GitHub</a></li>
-                            <li><a href="http://stackoverflow.com/users/1055743/lpradel">StackOverflow</a></li>
+                            <li><a href="https://github.com/lpradel">GitHub</a></li>
+                            <li><a href="https://libraries.io/github/lpradel">Open Source</a></li>
                             <li><a href="https://resume.github.io/?lpradel">OS Resume</a></li>
                         </ul>
                     </div>
@@ -69,9 +69,9 @@ Lukas Pradel
                     <div class="ui-item">
                         <h4>@lang('index.col-3-0')</h4>
                         <ul>
-                            <li><a href="https://plus.google.com/+LukasPradel/">Google+</a></li>
-                            <li><a href="https://www.linkedin.com/in/lukaspradel">LinkedIn</a></li>
                             <li><a href="https://www.xing.com/profile/Lukas_Pradel/">XING</a></li>
+                            <li><a href="https://www.linkedin.com/in/lukaspradel">LinkedIn</a></li>
+                            <li><a href="https://plus.google.com/+LukasPradel/">Google+</a></li>
                         </ul>
                     </div>
                 </div>
