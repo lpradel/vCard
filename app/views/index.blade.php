@@ -33,7 +33,7 @@ Lukas Pradel
             </div>
             <p> @lang('index.about-1-0')
                 @lang('index.about-1-1')
-                <a href="https://paluno.uni-due.de/"><span class="highlight{{$highlightNo}}">paluno</span></a>@lang('index.about-1-2')
+                <a href="http://www.cdi-ag.de/"><span class="highlight{{$highlightNo}}">CDI AG</span></a>@lang('index.about-1-2')
                 @lang('index.about-2-1')
                 <a href="http://steamcommunity.com/id/boonzsteam/"><span class="highlight{{$highlightNo}}">@lang('index.about-2-2')</span></a>,
                 @lang('index.about-2-3')

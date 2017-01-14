@@ -4,7 +4,7 @@ return array(
 
     'about-0-0' => 'Software developer',
     'about-1-0' => 'Hi there! My name is Lukas.',
-    'about-1-1' => 'I\'m a research assistant at',
+    'about-1-1' => 'I\'m a consultant at',
     'about-1-2' => '.',
     'about-2-1' => 'I like running, working out, ',
     'about-2-2' => 'video games',

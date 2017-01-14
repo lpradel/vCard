@@ -4,7 +4,7 @@ return array(
 
     'about-0-0'     => 'Software Entwickler',
     'about-1-0'     => 'Tach auch! Ich bin Lukas,',
-    'about-1-1'     => 'wissenschaftlicher Mitarbeiter bei',
+    'about-1-1'     => 'Consultant bei der',
     'about-1-2'     => '.',
     'about-2-1'     => 'Ich treibe gerne Lauf- und Kraftsport und mag ',
     'about-2-2'     => 'Videospiele',
