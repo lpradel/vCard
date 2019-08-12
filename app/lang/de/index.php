@@ -2,7 +2,7 @@
 
 return array(
 
-    'about-0-0'     => 'Software Entwickler',
+    'about-0-0'     => 'IT-Berater',
     'about-1-0'     => 'Tach auch! Ich bin Lukas,',
     'about-1-1'     => 'Consultant bei der',
     'about-1-2'     => '.',
